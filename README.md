@@ -1,0 +1,181 @@
+# Skull's Arma 3 Mission Collection
+Collection of my Arma 3 missions for many extra maps beyond what is available in the workshop
+
+## The Missions
+- **Arma Royale:** a randomized coop battle royale type of game.  Find gear and then survive against the AI as the zone shrinks.
+- **Convoy:** given random vehicles and a mobile arsenal, destroy a convoy of enemy vehicles.
+- **Escape from Turmoil:** a randomized, episodic, escape the island while collecting better gear type of game.
+- **Ground Breach:** randomized close quarters combat, short missions.
+- **Ground Patrol:** randomized missions to complete objectives within a town.
+- **Impasse:** a randomly generated sequential zone capture game.  Infantry only.
+- **Impasse Total War:** a randomly generated capture the island, sequential zone capture game.  Join the war with AI allies.  Infantry, vehicles, aircraft, seacraft.
+- **Insurrection:** randomized missions to capture and hold multiple locations against replenishing enemies.  Infantry only.
+- **Insurrection Combined Arms:** randomized missions with vehicles to capture and hold multiple locations against replenishing enemies.
+- **ROUT: The Battle For Freedom:** a persistent capture the island style game with ground vehicle, helicopters, and friendly infantry.
+- **Sniper's Errand:** randomized sniper mission where you will need to defend against a few wandering enemy while sniping a specific target in the AO.
+- **Split Second:** a randomly generated urban anti-terrorism CQC mission. 
+
+## The Maps
+- Altis 
+- abramia
+- adievka
+- altiplano
+- and_vt75
+- archie
+- archie_w
+- Baranow
+- Beketov
+- blud_vidda = vidda
+- Bornholm
+- bozoum
+- brf_bratronice
+- BTHBC_Mountain_Lakes
+- btrx_sngt
+- cam_lao_nam
+- Caribbean_Islands
+- carter_winter
+- carter_wrp
+- cfb_moosehead
+- chernarus 
+- chernarus_summer 
+- Chernarus_Winter
+- Colleville
+- cup_chernarus_A3
+- d41_ruegen
+- d41_ruegen_scorched
+- DaKrong = unsung
+- DeadRoad
+- Deniland
+- dingor
+- Dogechnya
+- drakovac
+- Eden 
+- egl_laghisola
+- Enoch
+- Esseker
+- fallujah
+- fapovo
+- Farabad
+- Farkhar
+- gc_krayina 
+- gila
+- gm_weferlingen_summer
+- gm_weferlingen_winter
+- go_map_fjord
+- Gorgona
+- green_sea
+- Gulfcoast
+- hebontes
+- hellanmaa
+- hellanmaaw
+- hpr_hurtgen = hurtgen forest
+- Hyde_Sark
+- I44_Merderet_V2
+- I44_Omaha_V2
+- iron_excelsior_Tobruk
+- iron_excelsior_Tobruk
+- isladuala3
+- IslaPera
+- Ivachev
+- Ivanivokova
+- juju_javory
+- juju_kalahari
+- juju_sahatra
+- jumo
+- K9S_Bastek
+- K9S_Djalka
+- K9S_Wallaroo
+- kaska
+- khe_sanh= unsung
+- Khoramshahr
+- Kidal
+- kunduz_valley
+- lingor3
+- Lythium 
+- m_32umc942108s51
+- m_36tuu484111s99 = Posadkovo
+- m_37udp164817s104
+- Maksniemi
+- Malden
+- Mapai
+- MCN_Aliabad
+- MCN_Neaville
+- mehland
+- miroslavl
+- mske
+- namalsk
+- Napf  
+- Noe
+- NorthTakistan
+- OPTRE_Madrigal
+- oski_corran
+- Panovo
+- panthera3
+- Prokhorovka
+- pulau
+- raateroadw
+- RaidMap
+- regero
+- Robotyne
+- ruha
+- RungSat = unsung
+- sara_dbe1
+- SefrouRamal
+- Sehreno
+- Sennoe
+- SPE_Mortain
+- SPE_Normandy
+- SPEX_Carentan
+- SPEX_Utah_Beach
+- Staszow
+- stozec
+- Stratis
+- sugarlake
+- sws_los_alamos_ii
+- sws_mountain
+- SWU_Aachen_Outskirts
+- SWU_Ardennes_1940
+- SWU_Dunkirk_Bray_Dunes_1940
+- SWU_Egypt_El_Alamein
+- SWU_Greece_Pella_Region
+- swu_public_afghan_map
+- swu_public_goose_green
+- swu_public_novogorsk_map
+- swu_public_novogorsk_map
+- swu_public_rhode_map
+- swu_public_salman_map
+- sze_kimmirut
+- takistan
+- Tanoa
+- tem_anizay
+- tem_ihantala
+- tem_ihantalaww
+- tem_ihantalawww
+- tem_karelia
+- tem_kujari
+- tem_olhava
+- tem_summa
+- tem_vinjesvingenc
+- teregova
+- TRGHT_eden2 = Everon Reforged
+- UMB_Armavir
+- UMB_Colombia
+- vn_khe_sanh
+- vt7   
+- VTF_Korsac
+- VTF_Lybor
+- VTF_Lybor_Winter
+- VTF_Prilivsko_Flood
+- wake
+- WL_Rosche
+- xcam_prototype
+- zagor_zagorsk_big_city
+- zagor_zagorsk_countryside
+- zagor_zagorsk_quarries
+- zagor_zagorsk_trud
+
+## Discord
+I have a [discord server](https://discord.gg/xmEGUNUWUR) for my missions.
+
+## License
+This work is licensed under the [Arma Public License Share Alike (APL-SA)](https://www.bohemia.net/community/licenses). You must give appropriate credit, not use for commercial purposes, and distribute any modifications under the same license.

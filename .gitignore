@@ -1,0 +1,4 @@
+*.pbo
+!*.Altis.pbo
+*.zip
+*/.SkullCollectionChangeLog.txt

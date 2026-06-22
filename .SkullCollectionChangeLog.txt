@@ -1,0 +1,1985 @@
+6/21/26
+Impasse Total War
+* Add - added option when requesting teammates via heli/truck to pick a squad type
+* Fix - infantry groups will now be better grouped into their defined squads instead of just groups of random units
+* Fix - fix garage to show some missing vehicles, usually from older mods like TIOW
+* Fix - make infantry invulnerable to friendly vehicle damage for a few minutes after they are dropped off
+* Fix - edit zones screen not shown to other clients while it's being edited
+* Fix - map shows on other clients while one player is answering 'do you want to edit objectives' question
+* Fix - fill dual role (attack+transports) before regular transports (was just using transports)
+. Fix - transport aircraft getting assigned as attack aircraft (ex. CSAT Taru was being classified as a heli with weapons)
+. Fix - if no transport vehicles in a faction it was using civ vehicles, now uses dual but without ammo if available before falling back to civ vehicles
+. Fix - fix vehicles are sometimes being placed at [0,0,0]
+* Fix - Project Injury Reaction (PiR) items not showing in the ACE arsenal
+
+6/18/26
+Impasse Total War
+* Fix - 'do you want to edit objectives' requester showed on all clients not just the one editing objectives which could break the mission
+* Fix - fix Max Terminator mod Skynet faction not showing up in faction list
+* Fix - space marines being placed in normal person sized vehicles and vice-versa
+* Fix - parameter missing * on default option: Reckless AI for faster engagement
+* Fix - parameter missing * on default option: Defend phase intensity
+* Fix - parameter 'defend phase warning time' changed default from 0 to 2 minutes
+* Fix - more Simplified Chinese translation fixes
+
+6/15/26
+Impasse Total War
+* Add - mission now saves objects (statics,fortification,etc but not vehicles) added from zeus
+* Add - added ability to call for nearby armor or infantry to come to your location to assist. Radio-Commander 0-8-5-3
+* Add - added parameter to have it search harder for larger towns when choosing objective locations
+* Add - added to fast travel parameter an option to put player in aircraft to be delivered to drop point when fast traveling on foot to a halo drop (if faction or civ has capable aircraft)
+* Add - added ability to save and load objective layouts for a map to be able to replay them. User CTRL-L and CTRL-S at objective moving and zone adjusting screens
+* Fix - reworked the 'choose objective location' flow to use the 'edit/move objectives' method
+* Fix - added a picture of faction unit selected when choosing individual unit from the faction
+* Fix - fixed fast travel 500m from contested zone edge still placed me in the zone instead of halo drop at the position
+* Fix - fixed bug in civilian vehicle parsing that was mixing vehicle types (luckily this mission doesn't use civ vehicles too much)
+* Fix - fixed a bunch of Simplified Chinese translations thanks to 治水的大宇啊
+
+6/7/26
+Impasse Total War
+* Map - added Sa'hatra map
+* Add - added screen to allow adjusting zones (which objectives make a zone and what order the zones will be in) at start of mission
+* Add - added parameter to disable autosave of the game.  Manual save is always available at the officer in at the base.
+* Fix - put more vehicles into objectives when starting a new zone (or when loading a save game) to help defend it better.
+* Fix - improve balance of attack vehicles between the objectives
+* Fix - 'Continent in Arms All-In-One' mod independent faction was not showing up because the units are all assigned to role=unarmed.  They will now show up, but you will see a random mix of riflemen, crew, pilots, divers all in the battlefield.
+* Fix - When changing number of troops that hang back for player's to transport, if lowered, remove troops so they don't stay around forever
+* Fix - teammates spawned from officer aren't being saved and don't revive player
+* Fix - block enter and numpad enter keys when moving objective locations at start of game (they were closing the map)
+* Fix - if no car/heli transports then use the 'dual attack/transport' version of the car/heli as a transport, just give it no ammo
+* Fix - improvements to dead/abandond vehicle cleanup
+* Fix - attempt to get SAD waypoint vehicles moving again if they stop moving
+* Fix - added 2km to objective size options (may be too large to work well, but it's there for anyone who wants them huge)
+* Fix - fix skip time sometimes doesn't work
+* Fix - add medical items from PiR mod (Project Injury Reaction) to the arsenal if PiR is running
+* Fix - skip the 'bring ai' request when fast traveling if all ai are in vehicles w/ players
+* Fix - don't show leader marker on map if showing all infantry
+* Fix - when calling arty (and other supports), clicking on map sometimes caused teammate AI to get a move command 
+* Fix - don't allow fast travel when in a vehicle carrying supplies being delivered to the front lines
+* Fix - set cfgRemoveExec to allow all functions and commands in case server has set strict settings
+
+5/31/26
+Impasse Total War
+* Add - added the ability to play as non-human races (zombies, covenant, etc).  Choose your race at start, or change it at the arsenal cabinets.  Consider this a beta feature.
+* Fix - improve map when doing fast travel.  Blue hash zones will teleport you directly, Red hash zones are no-go zones, everywhere else is parachute drop
+* Fix - defend phase - modify tasks to show defend point
+* Fix - defend phase - save if defend phase has been completed for this zone in case game re-loaded before zone captured
+* Fix - improve vehicle selection when using OPTRE covenant faction
+* Fix - another attempt at fixing veh parachute open too high sometimes on dedicated server
+
+5/29/26
+Impasse
+* Fix - fix 'random' button not working in ace arsenal
+
+5/28/26
+Impasse Total War
+* Add - added parameter to Defend Phase to have all enemy and ally vehicles/units stay around for you to clean up and push back instead of despawning once they get 1km or so from the players.
+* Add - added a 'rally point crate' at the base mechanic.  By placing this near an objective and deploying it, you allow ally infantry to spawn at this point instead of using transports.  This is useful when the allies are underdogs fighting in guerrilla warfare style.
+* Fix - during fast travel, put red circles in no-pick zones and blue circles around zones you will be placed on the ground.
+* Fix - Paradrop vehicle could open it's chute way too high up when playing on dedicated server
+* Fix - when down and team switching, sometimes player wasn't placed into vehicle switched ai was in
+* Fix - fix typo in parameter for defend phase flag max chance should have been 33% not 30%
+* Fix - some vehicles around the base repair pad were out of place (GM & CSLA)
+* Fix - fixed duplicate 'eject and parachute' option when in aircraft
+* Fix - when doing 'delivery' sub-task, automatically switch current task to the deliver point after loading a crate onto a vehicle
+* Fix - sometimes on dedicated server parachute didn't open when ejecting from vehicle
+* Fix - when trying to get stuck boats free, it was placing them on land instead of on water
+
+Insurrection Combined Arms
+* Fix - using 'next loadout' or 'previous loadout' on teammates didn't work
+* Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+
+5/22/26
+Arma Royale
+* Add - added parameter for defensive gear at start 
+* Add - added more options in 'Scarce weapons' parameter for reducing weapons dropped by enemy
+* Add - added ability to issue 'follow me' orders to all teammates (0-8-1 - choose teammate or all)
+* Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction 
+* Fix - helmets not showing up in random gear or on units when using randomized loadouts
+
+5/20/26
+Impasse Total War
+* NEW - Defend Phase: 
+    * Added an optional Defend Phase which can be triggered on capturing zone or flag.
+    * When triggered, the enemy will focus on just one ally held objective and throw even more units at it.  It will choose the blue objective with the most players near it.
+    * This will add vehicles and units, so it will tax your system some although I haven't noticed too bad of performance
+    * During the defend phase, the other objective will be locked so you don't have to worry about losing them.
+    * New parameters in the Defend Phase
+        * When do defend phases happen - choose to trigger when you capture a zone, or when you capture a flag, and always or sometimes
+        * How intense are the defend phases - from 1 (easier) to 10 (extreme).  The higher the number the more taxing it will be on your computer
+        * How much warning do you get before the defend wave leaves the enemy bases - how many minutes you get to get ready.  It will still take the enemy a while to get from their base to the objective after this delay.
+        * How long does a defend phase last - choose somewhere between 7 and 30 minutes
+* Add - changed fast travel so if you are not going to a base or captured flag, you halo drop on the position where you clicked the mouse
+* Add - added to parameter for having infantry more reckless to enable it for just allies or just enemies.
+* Add - added option at the base officer to change the number of ai squads that hang back at the base for transport
+* Fix - fix land vehicles being given waypoint in water when first told to head to objective
+* Fix - slight adjustment to stuck handler to help sea vehicles who are not moving but coasting on waves so don't seem stationary
+* Fix - fix for a cause of single units remaining in previously captured zones and never moving or getting reassigned
+* Fix - improvements to CAS plane and CAS heli to get them to engage a bit better
+* Fix - fixed when selecting a location with binoculars, it canceled if I brought up my binos while it was trying to do the same
+* Fix - fixed starting new game on dedicated server could leave all but one client be stuck on the map
+* Fix - fix side missions set to happen always, only happened infrequently.
+
+5/17/26
+Impasse Total War
+* Fix - fix starting new mission with multiple players left all but one player stuck on map screen.
+
+5/12/26
+Impasse Total War 
+* Fix - if creating the mission by selecting objective locations, a map marker gets left at the final objective that stays there even after restarting
+
+5/12/26
+Impasse Total War 
+* Fix - if using faction defined from individual units no vehicles were being found for the faction
+
+5/12/26
+Impasse Total War
+* Add - added parameter to never use civilian vehicles to pad out transports if the faction doesn't have that type (plane,heli,car,ship)
+* Fix - improved time it takes to add buildings to the zones.  Improves game start time & time between capturing a zone and seeing the next zone.
+* Fix - fixed bug where final objective chosen could get swapped with another one at mission creation
+* Fix - after teammates get player or other teammate up, have them return to what they were doing (doesn't work perfectly, but it's something)
+* Fix - Fixed bug causing crash when using faction unit instead of whole or sub factions
+* Fix - Fixed a crash that could happen if the saved factions got corrupted (like from the bug above)
+* Fix - fixed player's voice was not correctly being chosen randomly at the start of the mission
+* Fix - fixed unable to choose as players the faction Russia (TV) even though it's in the enemy list
+* Fix - fixed when selecting individual units for a faction, next run the custom faction would only show for enemy, not for players
+
+5/9/26
+Impasse Total War
+* Add - added option in supports to call in UAV/UAG that the player can control (0-8-3-7).  See parameters for how often it's available and if player needs to already have a uav terminal.
+* Add - added ability to move objectives around before starting a new mission
+* Add - added parameter to have infantry move more recklessly and engage the zone more quickly (hopefully adds an option for a faster paced game)
+* Add - added to tasks parameter to have them never, 25%, 50%, 75% or on all objectives (was 0 or 100% previously)
+* Add - added more range to the vehicle spawn rate parameters: hardly any(10%), much less(20%) and at the higher end much more(4x), massively more(5x)
+* Add - when players are fast traveling to an objective and get paradropped, if they are going to the same objective within 20 sec of each other, they will be dropped in the same area
+* Fix - finally found a fix for vehicles at base floating in the air sometimes when run from dedicated server
+* Fix - when specific units are selected for a faction, the faction vehicles weren't defined
+* Fix - garage load not working, all items grayed out
+* Fix - fixed 'show all friendlies' markers was showing for dead units
+* Fix - fixed swapping with teammate when player unconscious often killed the swapped teammate
+* Fix - when player goes down, don't allow teammate in vehicle with another player to exit vehicle to revive them
+* Fix - OPTRE: Covenant vehicles limited to just Spectre
+* Fix - possible fix for using DCO Soldier FSM and teammates wander off
+* Fix - fixed artillery 'using available artillery vehicles' wasn't dropping rounds in the fashion the vehicle would (changed number and timing of rounds firing)
+* Fix - fix bug in routine that calculates how many enemy to assign to each objective when using variable sized zones
+* Fix - fixed bug where ally transports vehicles were unloading troops only for the troops to jump back in.
+
+4/28/26
+Impasse Total War
+* Fix - in the garage, only the host can change vehicle colors and weapon pylons
+* Fix - in the garage, crew added to vehicles not spawning in (on dedicated server)
+* Fix - more robust fix for construction vehicles sometimes explode while spawning in
+* Fix - construction vehicles sometimes explode while spawning in - used 'can_collide' version of createVehicle
+* Fix - FIA pickup trucks spawning in as red pickups instead of cammo 
+
+4/21/26
+Impasse Total War
+* HotFix * Vehicle chooser screen 'view' button not working
+
+4/14/26
+Impasse Total War
+* Hotfix - removed a debug setting causing players to get way too many tanks
+* Hotfix - fixed bug in recruit squad to your team was not working.
+
+4/17/26
+Impasse Total War
+* Add - added a 'reset unit' option to teammates to fix stuck/broken ai.  Access from ai command bar > Actions: ie: F2 > 6 or by looking at the ai.
+* Add - added an 'are you sure' option when saving ai teammates if it will overwrite a previous save
+* Add - added option to radio command 'show/hide group icons on the map' to allow showing all friendlies, not just group leaders
+* Fix - Reworked virtual garage (both for vehicle chooser at start and in game) to better detect variants of vehicles and show them. 
+* Fix - transport trucks sometimes don't follow waypoints.  When this happens let player know it's stopped and needs a better, more reachable, waypoint.
+* Fix - 'Teammate Arsenal' not working with ACE when arsenal set to 'full'
+* Fix - base officer and mechanic didn't have faction corrected faces
+* Fix - don't show the gunship circle option when no pilot in vehicle or player is the pilot
+* Fix - virtual arsenal option to 'show all weapons for dlc for the player faction' didn't work
+* Fix - virtual arsenal option to show faction items wasn't finding all weapon underbarrel items (bipods)
+* Fix - virtual arsenal for 3CB factions missing basic items like FAK, toolkit, medikit, smoke grenades, etc
+* Fix - improve transport ships getting to shore to unload units and away from shore after unloading units
+* Fix - fix on-foot units deployed nearer zone could be placed in water
+* Fix - some vehicles were being misclassified as attack/transport/dual-role
+* Fix - change the distance vehicles spawn from bases dynamically based on how close objectives are (min 400 max 1000)
+* Fix - improve parachute from heli/plane to try to not land in water, and improve heli routing during drop
+* Fix - sometimes vehicles could spawn in and immediately be done and would then drive away and despawn, now we don't spawn these
+* Fix - sometimes if there are no attack vehicles of a type, it could fallback to using a transport (which it shouldn't have)
+* Fix - improve vehicle selection to prioritize dual over transport when need a transport, and attack over dual when need an attack
+
+Impasse
+* Fix - starting a saved game could get stuck with a black screen
+
+Escape From Turmoil
+* Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+* Fix - starting or exiting zone could get stuck with a black screen
+
+4/7/26
+Ground Patrol
+* Add - add option to use (or not) the ace arsenal when ace is present
+* Fix - adjusted number of enemies to make the game easier.  There are significantly less enemy, so adjust the enemy number up if it's too easy.  Let me know if the balance seems off.
+* Fix - option for 'Starting Placement - random' was broken if run from a dedicated server or when hosting to other players
+* Fix - ace arsenal not showing on starting vehicle when running on client
+* Fix - added in a notification letting player know that an extraction heli is inbound if extraction vehicle is destroyed (once player reaches the wreck of the extraction vehicle)
+
+Impasse Total War
+* Map - added unsung mod maps: Do Krong, Khe Sanh, Doung Island
+* Add - added ability to switch into any friendly unit on the battlefield (press U). On dedicated server if switching into cargo seats, it's best to go into team leader.
+* Add - added ability to request rearm,repair,refuel support vehicles (0-8-3-7)
+* Fix - added many ace items to the 'faction only' arsenal (let me know if I missed something you need)
+* Fix - added back the ability to get a random teammate loadout when requesting a teammate
+* Fix - combine params for 'I use a complete ai revive mod' and 'respawn right away' as they do the same thing
+* Fix - arma arsenal not ace arsenal shown when accessing teammate inventory at the arsenal cabinets (when ace arsenal is enabled)
+* Fix - ai no longer take damage while within 1000m of an enemy base
+* Fix - exiting a game shortly after it starts, without manually saving, was losing the saved teammates
+* Fix - can't change teammates loadout using Zeus - Arsenal module
+* Fix - when joining infantry in transport vehicles the driver often stops driving
+* Fix - another possible fix for once in a great while player is launched into the air after respawning (physics glitch)
+* Fix - if fast traveling in vehicle to objective via parachute with infantry inside, infantry parachute out as vehicle parachutes down
+* Fix - improvement to ai transported by player to not parachute at objective unless told to
+* Fix - fix bugs in switching with gunner/cmdr/driver options after 'join next infantry wave'
+* Fix - player ai squad size parameter not working when adding single units to the team
+* Fix - teammates not going unconscious, they are always dying instead.
+* Fix - some French translation fixes
+* Fix - rarely an ai would be immune to damage
+* Fix - changed service/repair pads to require a 60 second pause between service and 20 second pause after firing weapon to reduce OP-ness of parking on pad and getting constant ammo
+* Fix - when 'join infantry wave' land vehicle is converted to air vehicle if no land routes, player is removed from land vehicle but isn't put into new air vehicle
+* Fix - OPTRE armed pelican not showing in arsenal: 
+    I added a feature where I can manually add vehicles that are not defined correctly to appear the garage.  
+    If you spot other vehicles that are not in the garage, and are not able to be created from another vehicle using the 'animation' tab in the garage, let me know the vehicle class name and I'll add it.
+
+3/22/26
+Impasse Total War
+* Add - added parameters to adjust amount of transport vehicles (removed param for no-transports & 'also no transport' options from attack veh amount parameters as they are now redundant
+* Add - if a static weapon is spawned at the garage, now it will have a 'carry' / 'drop' action assigned to allow moving it
+* Add - added in parameter for instant death chance for player and AI teammates when using revive and go unconscious.  This can add more risk from taking damage and allow a bit of a scaling between no revive and normal revive.
+* Add - change the recruit ai teammate feature to allow selecting the unit's type from the list of faction unit types
+* Add - added additional startup message for 'populating objectives' so players get more feedback that the mission is still loading
+* Add - transport unload distance now auto-adjusts to larger distances if too many transports are being killed
+* Fix - param for choosing to replace player vehicles using the garage interface wasn't reloading the player vehicles on restart
+* Fix - fix cas bomber to be more reliable
+* Fix - bug in support for cas heli/plane if custom vehicles were setup with non-default textures/anims
+* Fix - for some people the game isn't saving so I set it so it will flush the save out to disk when using the save at the officer (can cause a ~1 sec freeze)
+* Fix - airfield crate 'drop' action was shown repeatedly if picked up multiple times
+* Fix - loading a saved teammate squad and then enter/exiting the arsenal was switching the teammates to a random loadout
+* Fix - fast travel to warship placed player underwater when parameter set to use only one base on the map
+* Fix - land vehicle transports were unloading too close to objective
+* Fix - transports were often engaging the objective for a minute before retreating instead of just retreating
+* Fix - dual class vehicles (transport + attack) were not always unloading their troops before attacking
+* Fix - significant improvement to ships unloading infantry near objective
+* Fix - when choosing vehicles, was adding in UAV/UGV vehicles even when not selected
+* Fix - possible fix for once in a great while player is launched into the air after respawning (physics glitch)
+* Fix - when using another revive system, teammates were all given the medic trait (is required when using ACE with the games teammate revive turned on)
+* Fix - when using vehicle chooser and garage set to show only ai vehicles, garage would show all vehicle until mission was restarted
+* Fix - fast travel to contested zone wasn't handing water correctly and could place player into zone instead of circling around zone to find land to fast travel to
+* Fix - sometimes crew didn't move into vehicles (noticed with RHSAFRF tanks specifically)
+* Fix - lots of infantry not connected to High Command
+* Fix - improved on foot infantry willing to get into player's vehicle for transport
+* Fix - on dedicated server the icons when in high command area all cyan (not blue/red/green). I added a work around for this arma bug.
+* Fix - CAS bomber/heli option not showing time until available
+* Fix - when using 'teamswitch' sometime the switched ai wasn't unconscious afterward
+* Fix - when using 'teamswitch' wasn't putting player into closest teammate
+* Fix - possible fix for sometimes repair area vehicles are not place correctly in position
+* Fix - if faction doesn't have all three refuel/rearm/repair vehicles, but has some, repeat the ones it has before falling back to civilian variants for around the repair pad
+
+3/10/26
+Impasse Total War
+* Add - added save/load buttons to the vehicle chooser
+* Fix - in the vehicle chooser, the faction vehicles list was empty when using sub-factions
+* Fix - SOG base aesthetic had duplicate set of arsenal cabinets
+* Fix - load/save squad mates was changing the base class of the units and rearranging them (gear was correct though)
+* Fix - loading a saved teammate squad would occasionally not load the gear into their uniforms
+* Fix - when choosing objective locations manually, sometimes it would reassign objectives causing player or enemy main base to be reassigned
+* Fix - occasionally infantry exiting vehicles would get waypoints sending them away from the objective instead of towards it
+* Fix - sometimes when fast traveling with a large group of AI teammates, a physics glitch would sending player flying
+* Fix - attempt to fix: sometimes when fast traveling to warship, player is placed on sea floor instead of deck of ship
+* Fix - fix typo in parameter for adding extra buildings to the zone
+
+Impasse
+* Add - added option under Friendly Revive parameter to disable revive completely allowing either revive right away or use a mod that replaces revive
+* Fix - couldn't choose objective locations when on dedicated server due to screen staying black
+
+3/1/26
+Impasse Total War
+* Map - New maps: Zagorsk Countryside, Zagorsk Quarry
+* Add - added smaller objective sizes (50 and 100m)
+* Add - added parameter to delay the friendly invasion at the start of the mission by a few minutes if desired
+* Add - added screen when starting a new mission when side missions are enabled that lets you choose which types of side missions you want to enable
+* Add - added option at officer to 'Join next infantry wave' which will put you in one of the vehicles delivering troops to the front line when the next wave hits.  AI teammates or other players do not come with you.
+* Add - added parameter 'Transport vehicles enabled' to allow disabling transports if your objectives are so close together that the infantry can walk
+* Fix - add more separation between spawning in vehicles on roads
+* Fix - infantry units not in your squad were not getting players up when players were unconscious
+* Fix - 'Eject and Parachute' mouse wheel action was not showing (shows when in vehicle at 50m or more altitude)
+* Fix - fixed issue when deploying uav/ugv/automated weapon if player was not blue faction the weapon's automated ai could be hostile to the players
+* Fix - adjusted ambient and player called artillery to send more rounds and closer together to give a more dramatic feel
+* Fix - don't allow ai teammates to exit vehicles to revive other ai teammates (still allowed to revive players)
+* Fix - attempt to fix where some players are sometimes seeing the officer get deleted when using the 'Clean up' at the officer
+* Fix - when ai teammates are going to revive someone, make them 'captive' so the enemy wont intentionally kill them to improve getting players up
+* Fix - ai vehicles heading to front lines no longer take damage from being in the enemy territory
+* Fix - cause vehicles unloading troops to sit still after unloading troops for a bit to allow the troops to more farther from the vehicle so they don't get run over so frequently
+* Fix - when sub-tasks are in use, you couldn't set the main 'attack' task to active
+* Fix - change the Deliver Supplies sub-task to not require 'deploy' action, it finishes when the supplies are in place
+* Fix - Deliver Supplies task sometimes didn't have a base populated where the supplies started
+* Fix - if players get within 500m of an unpopulated base, then populate it
+
+Ground Breach
+* Map - New maps: Farabad, Isla Pera, Fjord (from Global Ops Terrains)
+
+2/7/26
+Impasse Total War
+* NEW - added an AC-130 game mode.  Works on aircraft spawned from the virtual garage.  Designed for the V-44 X Blackfish (Armed) but should work with others. See the Discussion on the Impasse Total War - Altis workshop page on how to play. (https://steamcommunity.com/workshop/filedetails/discussion/3444387114/764058062403411166)
+* Add - added option at arsenal cabinet to copy a teammate's loadout to other teammates
+* Add - added option on air dropped arsenal crate to be able to turn off the light at night (helpful when using NVGs)
+* Add - added option for friendly revive to be able to disable the arma revive as well as the AI revive (to work with pSiKO Ai Revive mod)
+* Fix - base vehicles sometimes up in the air for a while
+* Fix - the 'get intel' task kept showing 'drop intel' in the middle of the screen while carrying the suitcase
+* Fix - optimization improvements to fix fps drops 
+* Fix - fixed bug caused by a [0] in the array of buildingPositions for some buildings
+* Fix - reduce number of bases created when loading a saved game even further to improve performance
+* Fix - when autoloading driver into vehicle spawned from garage, driver is told to STOP
+* Fix - on dedicated server, garage could always be 'full' even if set to faction only
+* Fix - on dedicated server, ai teammates spawning in at start were attacking the mechanic for a few seconds
+* Fix - Download and deliver tasks weren't counting as being completed if completed by remote player (not hosting)
+* Fix - missing translations on one of the parameters
+
+Ground Breach
+* Fix - on dedicated server teammates were dying at start of each round
+
+1/17/26
+Impasse Total War
+* Map - added maps Zagorsk Turd and Bastek 
+* Add - added option for variability in objective size and number of objectives per zone 
+* Add - added parameter to not end the mission when all objectives are captured for those who like to clean up the remaining enemy and view the battlefield
+* Fix - Hacker role not working if player is green or red faction
+* Fix - fix if players loadout is being set while they are switching weapons caused problems
+* Fix - fixed (hopefully) when some infantry groups are not listed when adding an ai team to the player's group
+
+ROUT
+* Add - Added option to choose objective locations (in parameter for number of objectives)
+* Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+
+1/6/26
+Impasse Total War
+* Fix - on delivery mission, allow multiple cargo in some vehicles
+* Fix - message 'Hold T to swap into teammate' when player is unconscious could get stuck on screen after being revived
+* Fix - groups added with zeus are now setup to be controlled by the high commander
+
+1/4/26
+Impasse Total War
+* HotFix - unable to choose vehicles due to screen being black
+
+1/4/26
+Ground Breach
+* Add - added option to have more units stay in buildings
+* Fix - disable LAMBS & VCOM control of units garrisoned in buildings so they will stay in the buildings (unless 'inside' option set to legacy ai)
+* Fix - improve placement of the ammo cache to be destroyed so it isn't inside rocks or unenterable buildings
+
+Impasse Total War
+* Add - added optional tasks to complete to help capture the objectives
+* Add - added alternate base aesthetics (Modern, WW2, Cold War, Vietnam)
+* Fix - disable LAMBS & VCOM control of units garrisoned in buildings so they will stay in the buildings
+* Fix - on dedicated server, at startup it would only show 'Parsing Vehicles' and not the other messages
+* Fix - removed teammates actually parachuting with player as they often would no longer move even when given orders
+* Fix - flags not correct color on starting a mission for a short time (was allowing fast travel to enemy flag without parachuting)
+
+12/9/25
+Impasse Total War
+- Fix - 'skip time' option at office not working
+- Fix - teammate arsenal uses full arsenal even if arsenal set to be faction or dlc specific
+
+12/4/25
+Impasse Total War
+- Fix - when fast traveling on some maps, fast travel placed player at center of map
+- Fix - another fix for too many vehicles in zone when new zones are created
+- Fix - BIS_fnc_findSafePos doesn't always return [x,y,0] when no position found (mod maps sometimes return just [x,y] which erroneously indicates success)
+
+11/29/25
+Impasse Total War
+- Fix - Bug when zone captured was causing enemy to get way too many vehicles for the next zone
+
+11/11/25
+Ground Breach
+- Fix - When using the option to select a loadout on teammates and players, it gets stuck doing one or the other, not both
+
+Insurrection
+- Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+- Fix - was showing the VR Arrow on the objectives (debug feature that got left on)
+
+11/10/25
+Ground Breach
+- Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+- Fix - send message to return to the safe house after completing objective to all players not just the player completing the objective
+- Fix - ambient fly by was using Hummingbird if enemy faction had no helis, now will try player faction or civ faction, if no heli/planes found will not do flybys
+
+Ground Patrol
+- Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+- Fix - 'select loadout' at the arsenal cabinet was not updating when new faction was selected
+
+Impasse
+- Fix - improved objective finding speed a little and added on display showing it's making progress.
+- Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+
+Impasse Total War
+- Add - updated the vehicle chooser with ability to add vehicles by class (winter/summer in Global Mobilization for instance), and ability to remove/view vehicles
+- Fix - More translation fixes
+- Fix - vehicle parachute or land parameter 'both' option misnamed
+
+10/28/25
+Impasse Total War
+- Fix - game hanging when SOG Prairie Fire CDLC running
+- Fix - fix some French translations (thanks SRXcraft!)
+- New Map - Rosche, Germany
+
+10/23/25
+Impasse Total War
+- Map - added Zagorsk Big City map
+- Add - added more times to 'skip time' to (morning,evening)
+- Fix - UAVs spawned in the garage weren't controllable with the UAV Terminal
+- Fix - more work on improving and bug fixing the handling of fixing stuck vehicles/units
+- Fix - warning of being too near enemy stronghold could appear incorrectly if enemy base near friendly base
+- Fix - SOG Prairie Fire, character chatting can be wrong language if players are non-blue faction
+- Change - moved 'Force new faction' parameter under the 'Force new game' parameter as an option
+
+10/15/25
+Impasse Total War
+- NEW - localized the game for other languages. (English,French,German,Russian,Simplified Chinese,Spanish) 
+        I don't have a great way to test this, so please let me know of any text/localization errors in discord (Misc#localization-bugs)
+        Also, I could add other languages (if the translations are working) if needed.  Let me know.
+- Add - added support option to drop a flare barrage
+- Add - added ability to have support>transport>helicopter to deliver troops
+- Add - added ability from construction vehicle to be able to place down fast travel points
+- Fix - when unconscious and swapping with teammate, handle correctly if you or the ai are in vehicles
+
+10/11/25
+Arma Royale
+- Add - added option to have first aid kits more difficult to find
+- Add - added option to make being in 'the blue' much more dangerous
+- Fix - headgear, uniforms, and items were being grabbed from all dlc instead of just the selected dlc
+
+Impasse Total War
+- Add - added option at the mechanic to get a 'construction vehicle' to allow placing fortifications that get saved with the game, and to allow adding objects placed with Zeus/mod to be saved with the game
+- Add - added 0,10,20 to options for 'Approximate number of infantry on each side'. With '0' you can have attack vehicle only battles
+- Add - in parameter to add buildings to the zone, added option to use more military buildings
+- Add - added a billboard showing the base layout (to help new players).  Param option is available to hide it.
+- Add - added option at the mechanic to 'clear the repair pad' to remove empty vehicles or wrecks
+- Fix - add UAVs and Submersibles to the garage
+- Fix - if 'choose vehicles from the garage' parameter is set after mission started, was using only civ vehicles.  Now it's ignored if no vehicles selected.
+- Fix - improved vehicles spawning on roads to be facing the correct way more frequently and be spaced better to keep from colliding
+- Fix - improvement to base vehicle spawning when on hilly terrain
+- Fix - fixed bug in heli extract (0-8-4-1) not working on clients (only worked on hosts)
+- Fix - para-dropped vehicles sometimes take damage or flip over on landing
+- Fix - when repair/refuel/ream vehicle and you turn on the engine before 100%, it will remember and continue if you shut down again within 20 seconds instead of starting from 0%
+- Fix - fixed bug in finding location on road to spawn vehicle that could fail
+- Fix - improved having vehicles populate the zones at start of game and when zones advance (infantry was working well already)
+- Fix - improve faction unit role parsing for CLDC that didn't fill in 'role' in unit's config
+- Fix - swap into teammate in vehicle was causing you to be outside vehicle
+
+9/29/25
+Impasse Total War
+- Add - added a 'none' option to how many friendly infantry and friendly attack vehicles are allowed.  Now you can play with only you, your squad, and friends on your team.
+- Add - changed the map to have front lines shown instead of circles.  Parameter exists for front lines, circles, or nothing.
+- Fix - bug in "Recruit ai squad mate" causing it not to work
+- Fix - bug in 'stuck handler' allowed some units to stay stuck
+- Fix - improved vehicle waypoints to help them complete more reliably and stay in aggressive behavior
+- Fix - improved unloaded units often standing still and not engaging.  It can still take a bit to un-stuck them.
+- Fix - spawn vehicles closer to the bases if possible to accommodate placing objectives closer together
+
+9/27/25
+Impasse Total War
+- Add - added option to eject (or parachute) squads that player is transporting in addition to the current method of needing to be stopped at <800m from objective zone and touching the ground.
+- Fix - bug in vehicle waypoints causing vehicles to stop attacking
+- Fix - tweaked the 'stuck vehicle check' routine to be slightly more aggressive to vehicles far from their waypoint that aren't moving
+- Fix - paused game didn't pause in-game time of day from advancing
+- Fix - updated single player pause to allow pausing while in vehicles
+
+9/25/25
+Impasse Total War
+- Add - added ability to 'recruit ai team' which will list all the faction's infantry groups to choose from
+- Add - added 'teammates' option to officer that has all the teammate add/remove/save/load/etc in one place
+- Add - added parameter to change distance from objective at which transport vehicles unload infantry
+- Fix - bug in objective location selection when using backspace to back up
+- Fix - change system so if you ask for no transports of a vehicle type, it no longer falls back to using civilian variety of the vehicle.
+- Fix - aircraft were spawning on the ground in rare cases
+- Fix - units parachuting out of airplanes were spread much too far apart
+
+9/22/25
+Impasse Total War
+- Added Maps - Everon Reforged, Korsac, Gulf Coast, Green Sea, Posadkovo
+- Add - added ability to add friendly warships (USS Freedom, etc) that allow fast travel, officer, arsenal, garage, and spawn point for friendly air/sea assets.
+- Add - added option to prefer air vs land transport vehicles.  This options increases the likelihood to spawn the vehicle type if it's available.  It does not make it more available (see other options for that).  It can be helpful to prefer air vehicles on maps that are hard to traverse (like Cam Loa Nam).
+- Add - added 'slow' dead unit clean up option and reworked the clean up a bit. 
+- Add - updated artillery to use actual rounds available to the faction (or default mortar if non available) and added artillery units to bases to add some ambiance 
+- Add - added option for smaller bases that don't have any random vehicles to use.  Useful if you only get vehicles from the garage.
+- Add - added option for only 1 base, players only spawn at first base and can only get vehicles there, no garage pad in objectives or captured areas.  
+- Add - make teammate dismiss keep showing after dismissing a teammate to make it easier to dismiss a few of them
+- Add - added to face/voice parameter to use faction voice but player face
+- Add - added options when fast traveling with ai: None, all ai, nearby ai, ai not in vehicles, select individual ai
+- Fix - helicopters which could not find a place to land to unload troops would hover and no longer respond to commands (bug in 'TR UNLOAD'?).
+- Fix - improve helicopter stuck handling to get them to start moving per commands
+- Fix - improve if player ejects from aircraft, teammates will eject as well.
+- Fix - SPE_Utah_Beach wasn't being updated on steam
+- Fix - when selecting objectives manually, show a red (no fly zone) circle on the map around place objective marks
+
+9/8/25
+Ground Patrol
+- Fix - if option 'starting placement' set to 'random' mission would hang with black screen
+
+Impasse
+- Add - added ability to choose objective locations (see parameter on how many objectives)
+
+Impasse Total War
+- Add - added ability to have planes use 'move' waypoints to make them more aggressive. Parameter for 'less aggressive planes' can change them back to how they behave now with 'sad' waypoints.
+
+Insurrection
+- Add - added ability to choose objective locations (see parameter on how many objectives)
+
+Insurrection Combined Arms
+- Add - added ability to choose objective locations (see parameter on how many objectives)
+
+9/4/25
+Arma Royale
+- Fix - enemy count dropping too quickly as two factions killed each other
+- Fix - adjust starting area to have less enemy as it was a bit too hard right at the start
+
+Impasse Total War
+- Add - added ability to remove all teammates from your squad in one command (list of who to remove has 'ALL' at the end of the list)
+- Add - added option in the 'choose ai vehicles' parameter to choose vehicles to 'ADD' to the faction.  So if you have the mission set to use faction vehicles, you can select vehicles to add to that list instead of just replacing the list.
+- Add - when calling in heli extract, it now asks how many seats you need if there are multiple heli types available 
+- Fix - convert heli transport support call to use improved position selection menu
+- Fix - Selecting vehicles on cam lao nam put vehicles in water
+- Fix - chosen vehicles to be used not being reloaded on continuing mission (was broken in last publish)
+
+ROUT
+- Fix - convert all supports call to use improved position selection menu
+
+8/26/25
+Ground Patrol
+- Fix - after mission start, map and arsenals get messed up for JIP or respawning players
+
+8/24/25
+Arma Royale
+- Fix - don't allow fog to get too thick
+
+Ground Breach
+- Add - updated mission to allow up to 10 players
+- Fix - added text to 'destroy cache' task to indicate you need to return to the start building to complete task
+
+Impasse Total War
+- Add - added option to allow changing faction without erasing save game
+- Add - added ability to change selected dlc used (ai vehicle param: use side/dlc)  Toggle param to side/dlc will allow rechoosing dlc.
+- Add - added option to choose helicopter unload method for troops (parachute, land, both)
+- Fix - don't allow vehicles that don't move or Warhammer 40K drop pods to be used by ai to fight at front lines
+- Fix - don't allow artillery vehicles to be used by AI as attack vehicles brought to the front lines
+- Fix - fix game hangs if arma config has a unit whose faction isn't defined in CfgFactionClasses (due to missing mod presumably)
+- Fix - attack vehicles with combatmode "RED" waypoints weren't going into combatmode "RED"
+
+Insurrection
+- Fix - on tanoa enlarge capture zone from 10 to 20m on zones that are elevated as some buildings have building positions that you can't get to
+
+Insurrection Combined Arms
+- Fix - on tanoa enlarge capture zone from 10 to 20m on zones that are elevated as some buildings have building positions that you can't get to
+
+ROUT
+- Add - update mission to allow up to 16 players
+
+8/3/25
+ALL MISSIONS
+- Fix - fix so missions don't crash when using Enhanced Arsenal mod 
+  Convoy, Escape, Ground Breach, Ground Patrol, Sniper's Errand - these missions do not work with this mod and will state as such when run
+  Other missions were updated to function correctly with that mod enabled
+
+7/31/25
+ROUT
+- Add - added artillery option for enemy and players in the parameters (players use 0-8-4)
+
+7/29/25
+Arma Royale
+- Add - cause enemy to fire their weapons if they haven't in a few minutes to help players know where they are.
+
+Ground Patrol
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+Impasse
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - new game y/n question was triggering Zeus mode if Y is zeus key
+- Fix - laser designators not showing in full arsenal
+- Fix - get working with Tinter Furniture mod so placed bases aren't surrounded by furniture 
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+Impasse Total War
+- Add - added parameter to allow locking flags for a while after they are captured
+- Add - added parameter to adjust how long between ai spawn waves
+- Add - buildings added to the zone now have gray rectangles on the map like other buildings
+- Fix - when units are garrisoned, they were filling up a building.  Now they will spread out between more buildings.
+- Fix - arsenal missing ace medical items
+- Fix - very large planes had trouble parachuting troops
+- Fix - planes spawned in as replacement for ground vehicles (when ground vehicle not available) started on the ground
+- Fix - in corner cases planes could have gotten command to land and unload troops instead of just parachuting troops
+
+Insurrection
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - laser designators not showing in full arsenal
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+Insurrection Combined Arms
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - laser designators not showing in full arsenal
+- Fix - get working with Tinter Furniture mod so placed bases aren't surrounded by furniture 
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+ROUT
+- Fix - protect players if they are in area of new base as it's being created
+- Fix - don't allow CUP Mi-6 and Mi-53 helis in base as they are too big - cause enemy to fire their weapons if they haven't in a few minutes to help players know where they are.
+
+7/24/25
+Escape
+- Add - added display of remaining time on the map
+- Add - added parameter to slow down how long it is between a unit being killed and it respawning at a flag (if ai respawning is turned on)
+- Fix - pausing game didn't stop the escape timer
+
+7/18/25
+Impasse Total War
+- Add - added ability to swap ordinance on heli/plane pylons on garage spawned vehicles
+- Add - added option to give transport aircraft extra armor/damage reduction.  Often allows troops to parachute out instead of exploding immediately. 
+- Fix - use correct vehicle crew in unit if the defined vehicle unit types are in the chosen faction
+- Fix - High Command commanded units keep getting waypoint reset 
+- Fix - player's loadout not saved between sessions.
+- Fix - garrisoned units and units place on statics were not controllable by High Commander
+- Fix - parachute player vehicle was not always starting fully upright when parachute opened
+- Fix - fast travel from garage pad not working on captured zone
+- Fix - attack vectors would get broken if game saved too soon after 1st started before background vectors calculations were complete  
+- Fix - on capturing a zone, the AI in the old zone had to walk a long way to the next zone, clean them up if no players around instead
+- Fix - allow fast travel to objectives very close to bases
+- Fix - vehicles spawning on roads not correctly aligned with road and in correct direction
+- Fix - fast travel w/ bring AI, shouldn't bring AI in vehicles with other players
+- Fix - on hud, make letter not change color until circle does instead of following flag raise/lower color
+- Fix - add stuck handling to AI near objectives as they stand around frequently (was already on AI away from objectives)
+
+6/23/25
+Arma Royale
+- Fix - weapon swapping broke with latest arma update, fixed and improved, now remembers fire more
+- Add - added option to show enemy remaining on screen (it's always available in the map briefing)
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+Escape from Turmoil
+- Fix - weapon swapping broke with latest arma update, fixed and improved, now remembers fire more
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - new game y/n question was triggering Zeus mode if Y is zeus key
+- Fix - laser designators not showing in full arsenal
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+6/20/25
+Ground Breach
+- Add - added option to select a default loadout at the arsenal cabinets
+- Fix - choosing harder difficulty and selecting actual number of enemy would scale back number of enemy
+
+Impasse Total War
+- Add - when recalling ally squads, choose them on the map (if you have a map)
+- Fix - heli extract - wasn't using new location system for choosing locations
+- Fix - on captured bases, garage pad was still doing repairs
+- Fix - could respawn into a base that hadn't been placed (objects not spawned in)
+- Fix - sometimes spawned in ships were spawning inland instead of being parachuted near an attack zone
+
+6/14/25
+Impasse Total War
+- Add - when dismissing AI teammate, you can now choose which AI teammate to dismiss
+
+6/12/25
+Sniper's Errand
+- Add - added option to spawn in on ground instead of parachute in
+- Add - added difficulty setting 'use server setting'
+- Fix - 'select a default loadout' didn't update loadouts when faction changed
+
+6/8/25
+Impasse Total War
+- Add - allow vehicle fast travel from garage pad in base as well as the repair pad
+- Add - added option at officer to adjust friendly vs enemy vehicle spawn rate (same as in parameters, but can be changed during play)
+- Fix - don't allow helicopters to use vehicle fast travel
+- Fix - added fallback code to keep player zeus on death even if curator module no longer functioning
+- Fix - friendly vs enemy unit/vehicle adjustment done at officer is now saved between games
+- Fix - documentation updated (shown in map upper left) 
+
+6/3/25
+Convoy
+- Fix - Teammate Revive setting shows wrong value ('yes' instead of 'no' and vis-vesa)
+- Fix - add an UnStuckHandler to help vehicles keep moving
+
+Ground Breach
+- Fix - attempt fix at players joining game in falling animation or in the water
+- Fix - fix for finding starting location on maps that report no buildings from 'nearestBuilding' call (tatooine)
+
+6/1/25
+Impasse Total War
+- Add - added option for 1500m attack points
+- Add - added option for transport land/sea vehicles to just despawn after unloading instead of returning to base (may improve performance)
+- Add - added option to adjust number of vehicles per side (speeds up or slows down the rate friendlies get vehicles compared to enemy)
+- Add - added option at officer in base to warp into an ai teammate, you will be teleported to where the AI is, and the AI will be deleted.  Useful when playing solo and you are killed.  After respawning you can essentially take over as the AI.
+- Add - added listbox showing selected vehicles when selecting vehicles to use via the garage interface
+- Fix - don't allow CUP Mi-6 and Mi-53 helis in base as they are too big
+- Fix - when vehicles chosen using garage interface at mission start, textures weren't used on AI vehicles
+- Fix - improve getting units out of ships when being transported and arrived at destination
+- Fix - vehicles falling through the ground on the Weferlingen map
+
+5/30/25
+Impasse Total War
+- New Map - Avdiivka Ukraine
+- New Map - Mapai, Mozambique
+- New Map - Novogorsk
+- Fix - attempt to fix issue where AI stop spawning
+- Fix - added option to delay the red screen when entering enemy zones
+- Fix - teammates recruited using garage weren't entering vehicle on dedicated server
+- Fix - helicopters could be parachuted into zone
+- Fix - remove water trucks (Reaction Forces) from attack vehicles
+- Fix - global mobilization vehicles not showing as attack type when they are
+- Fix - adjust color of flag gui boxes to have better contrast with day/night
+- Fix - error in logs when adding units via garage
+
+Ground Breach
+- Fix - possible fix for game micro-freeze when reinforcement vehicle is spawned in
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+Convoy
+- Add - mission updated to work on any map by changing pbo name (make sure map is large enough and has good roads)
+- Add - added ability to choose any faction
+- Add - added vehicle and arsenal 'faction dlc' option to use any vehicle/weapon from the factions dlc
+- Add - added refuel/rearm/repair if within 15m of a service vehicle parking spot for 20 sec
+- Fix - remove water trucks (Reaction Forces) from attack vehicles
+- Fix - global mobilization vehicles not showing as attack type when they are
+- Fix - laser designators not showing in full arsenal
+
+Sniper's Errand
+- Add - mission updated to work on any map by changing pbo name (make sure map is large enough and has good roads)
+- Add - added ability to choose any faction
+- Add - added vehicle and arsenal 'faction dlc' option to use any vehicle/weapon from the factions dlc
+
+5/23/25
+Impasse Total War
+- New Map - Anizay
+- New Map - Tobruk, Libya (from IFA AIO)
+- Add - sea vehicles incorporated, ai will use them to attack and transport units if available
+- Add - added option to allow spawning AI planes even if side hasn't captured an airfield
+- Add - added option to 'Dead unit cleanup' parameter to never clean up units
+- Add - added lights to garage pad boards, flags, and to garage's in base
+- Add - Teammates are now saved when game is saved.  Doesn't support players split into different squads with AI teams and will only load 1 team.
+- Add - added option at arsenal cabinets to save/load ai teammates w/ gear.  There is 1 save per player, so you can save/load a different squad per player for each player in their own squad, must be squad leader to save team.
+- Add - added parameters to control amounts of all attack vehicle types, to disable the attack vehicle type, or to disable attack & transport of the vehicle type
+- Fix - SOG Prairie Fire maps not recognized for calling in supports
+- Fix - sometimes when selection objective locations the screen was black instead of showing map
+- Fix - protect players if they are in area of new base as it's being created
+
+5/15/25
+Impasse Total War
+- New Maps - Dogechnya, Prokhorovka
+- Add - option on arsenal cabinets for team leader to set AI teammates loadout using virtual arsenal
+- Fix - improvements to vehicle travel on roads
+- Fix - more aggressive 'stuck unit' handling to reduce vehicles/units that are stuck on terrain or just not moving
+- Fix - fast travel parachute gets moved further from water
+- Fix - improve getting teammate spawned through garage to get in spawned vehicle
+- Fix - truck extract not working when called as squad leader on a dedicated server
+
+-- hotfix --
+- Fix - error when exiting ace arsenal
+- Fix - error in er7 rifle from the Ivanivokova map mod causing game to be unplayable after acessing the arsenal
+
+5/12/25
+Impasse Total War - hotfix
+- Fix - command menu option broken
+
+5/12/25
+Impasse Total War
+- Add - reworked the supports menu (0-8) adding 'supports', 'transports', and 'commander'
+- Add - added player requested artillery (0-8-3-3)
+- Add - added player requested Close Air Support (CAS), bomber and helicopter variants (0-8-3)
+- Add - added player requested transport truck which can also deliver new teammates (0-8-4-2)
+- Fix - on loading a saved game, don't load in all the old bases to improve performance later in the game when lots of bases exist. You can cause unloaded bases to be loaded by fast traveling to them.
+- Fix - turn down vehicle spawn rate slightly
+- Fix - speed up flag capture if no enemy are in the zone
+- Fix - don't despawn vehicles sitting idle (stuck) if they are in the zone they are supposed to be capturing/defending
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+5/9/25
+ROUT
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - new game y/n question was triggering Zeus mode if Y is zeus key
+- Fix - laser designators not showing in full arsenal
+- Fix - vehicles chosen with garage interface at mission start aren't in garage after save/load
+- Fix - get working with Tinter Furniture mod so placed bases aren't surrounded by furniture 
+- Fix - don't spawn the Mi-6 helicopter in the base as it's just too big
+- Fix - could not retrieve stored vehicles at the mechanic
+- Fix - add tooltips to show full faction name so long names can be fully seen
+
+Impasse Total War
+- Add - added support for UVO mod (Unit Voice Overs)
+- Fix - bug in garrison causing zone not to advance once all objectives captured
+- Fix - bug in vehicle parsing seen in CFP vehicles causing some non-ai vehicles to be selected
+- Fix - bug in civilian behavior if zone had no buildings
+- Fix - allow fast travel/repair at flag/garage pad at flag at >90% instead of only at 100%
+- Fix - fast travel to/from garage pad now asks squad leader if teammates should be brought along
+
+5/7/25
+Ground Patrol
+- Add - added option to give enemy nvgs, forced flashlights, or no nvgs and only flashlights if their loadout has them
+- Add - added ability to select a default loadout from anywhere you can access a virtual arsenal
+- Add - changed teammate next/prev loadout to 'select loadout' for selecting their loadout from the faction defaults
+- Add - added a new selection to the 'Teammate Revive' or 'Revive' menu option for 'no revive, instantly respawn'
+- Fix - jipping into game had numerous issues including a bad spawn location
+
+5/6/25
+Impasse Total War
+- Add - pause dedicated server if all players disconnect
+- Fix - improvements to garrisoned units, they now close doors & do a better job being on the floor (as opposed to under/in the floor)
+- Fix - deploying airfield broke fast travel
+- Fix - deployed airfield was not being saved between game sessions
+- Fix - could not retrieve stored vehicles at the mechanic
+- Fix - saved vehicles were not being saved between game sessions
+- Fix - added another option for how many objectives (less) & tweaked the objective find algorithm to try to keep more spacing between objectives especially when using less objectives
+- Fix - when delivering units and are at an already captured base, the warning letting you know it's already captured wasn't showing on clients
+- Fix - driverless vehicles (as found in SPE CDLC) broke the mission
+- Fix - attack vehicles and dual purpose vehicles (attack and transport) were swapped causing non-transport vehicles to spawn for transports
+- Fix - on first game play (not loading from a save), garage pad icon and repair functionality not working.
+- Fix - HCC (High Command Controller) squads created from teammates were being controlled by the mission.  They now stay under player control.
+
+5/5/25
+Impasse Total War
+- New Maps - Ivanivokova, Madrigal
+- New Feature - new garrison options (none,few,many) to have units move into buildings in objectives they own when no enemy near the objective.
+- Add - added option to have some friendly troop stay back at base for players to transport to the front lines (for players who like flying/driving)
+- Add - added notice board by garage pad of contested flags, garage is now access from here instead of flag and allows fast travel back to the nearby flag
+- Add - moved vehicle repair to the garage pad instead of around the flag (repair available if stopped and 'Fast travel in vehicle' shows in actions)
+- Add - garage pad marker is now blue when accessible, and gray when not.  Fast traveling to objective with gray garage marker will use parachute.
+- Add - fast travel between garage pad and flag now possible
+- Add - fast travel in vehicle from any repair point (garage pad of captured objectives, or repair point in bases)
+- Add - added a "Very Few" option to number of vehicles which is half as slow spawn rate as "Much Less" for the attack vehicles.
+- Fix - vehicle textures added when using 'choose specific vehicles using the garage interface' parameter weren't being applied to AI vehicles
+- Fix - fast travel with unconscious AI could leave the AI unable to be revived - fix is to heal all ai that are traveling with you
+- Fix - give more weight to the number friendly vs enemy ai count param, and add one for even less friendly ai
+- Fix - on capture of zones, delete AI far from player so they are available to populate the new contested zones
+- Fix - if player currentPilot ejects from aircraft, teammate AI in same vehicle should eject
+- Fix - if static weapons run out of ammo, the gunner exits the vehicle or a bit, then the static refills
+- Fix - fast travel in vehicle from repair points not available after respawning
+- Fix - selecting a predefined loadout from the load cabinets when using 3CB factions was giving empty uniform/vest/backpack
+- Fix - limit large maps to max of 50 AOs (adjusted by parameter for number of objectives)
+- Fix - bug causing enemy reinforcements to get checked every 10 seconds instead of every 2 minutes
+- Fix - don't spawn the Mi-6 helicopter in the base as it's just too big
+- Fix - improvements to units getting into/out of player vehicles for player driven transports
+- Fix - many smaller bugs squashed
+
+4/24/25
+Impasse Total War
+- Add - added option for vehicles to be air-dropped into objectives that don't have valid land route (can be disabled in parameters)
+- Add - infantry in water for 8 minutes or more will be deleted
+- Fix - ejecting from aircraft not opening parachute
+- Fix - if you have access to zeus and die quickly multiple times in a row, you could lose zeus access
+- Fix - get working with Tinter Furniture mod so placed bases aren't surrounded by furniture 
+- Fix - unit spawn bug causing system to slowly stop spawning units
+- Fix - adjust AI spawn rate based on max units allowed on the map (really large number of AI were being throttled)
+- Fix - spread out vehicle spawn positions on roads a bit as the sometimes collided
+- Fix - cleaning up dead units did not delete empty groups
+- Fix - unstuck handler wasn't pausing when game paused
+
+4/21/25
+Ground Patrol
+- Add - option to fail mission, or not, when all players are down
+- Fix - get working with Tinter Furniture mod so placed bases aren't surrounded by furniture 
+
+4/20/25
+Impasse Total War - hotfix
+- Fix - Headless client slots were not playable
+
+4/20/25
+Impasse Total War
+- New Maps - Chernarus (Autumn,Summer,Winter), United Sahrani, Everon, Nogova
+- Add - added Headless Client support.  It needs to be enabled in parameters.  (code from Gandalf)
+- Add - added ability to fast travel in vehicles using vehicle repair points (in base or near flag)
+- Add - increase number of AI allowed to 300 (150 each side, useful when using headless clients)
+- Add - support for adding units to your team in the garage (vehicle positions in upper right)
+- Fix - laser designators not showing in full arsenal
+- Fix - improve the stuck unit handling to push for newly spawned vehicle to move more quickly
+- Fix - bug placing statics when extra buildings feature was turned off
+- Fix - bug when reviving disabled in parameters
+- Fix - remove 'respawn' backpacks from the arsenal since this mission doesn't support them
+- Fix - vehicles chosen with garage interface at mission start aren't in garage after save/load
+- Fix - improve troop unloading as approaching objectives (land vehicle react better, heli slow down and keep low)
+- Fix - player's helicopter dropping parachutes when returning to base to repair
+- Fix - add gray outline around flag markers on screen to help see when flag is dropping when only 1 objective is active
+- Fix - when unloaded, airfield crate could bounce into vehicle causing damage
+- Fix - infantry using static weapons would no longer be managed by the infantry manager
+- Fix - empty parachutes appearing behind helicopters
+- Fix - when using OPTRE (Halo) covenant units, the grunts would rarely spawn (now allow unarmed units from Covenant, HL_Zombies, or RyanZombie factions) To get more grunts you may also need to 'select units' on the faction selection screen and choose all the grunts, but only a couple hunters, elites, jackals).
+- Fix - mission hanging create AOs if statics chosen from garage interface for either team
+- Fix - mission was trying too hard to place statics and could take 3+ minutes to give up if no flat ground in the objective
+
+4/15/25
+Ground Patrol
+- New - updated mission so porting to other maps is as simple as copying the pbo file 
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - choose AO location map was hidden behind black screen  
+- Fix - laser designators not showing in full arsenal 
+
+4/13/25
+Impasse Total War
+- Add - added option to have ai use static weapons in the zones (including mortars or not)
+- Add - added option to disable stamina
+- Add - when fast traveling, if you are squad leader and have AI, you can choose to bring the AI with you or not
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+- Fix - new game y/n question was triggering Zeus mode if Y is zeus key (caused player not to be able to select objective locations)
+- Fix - choosing objective locations didn't work if player is faction without a map 
+- Fix - adjust number of artillery shells fired to account for how many objectives per zone there are.
+- Fix - artillery timing wasn't converting desired minutes into seconds of delay (was firing way to frequently)
+- Fix - artillery wasn't correctly avoiding friendly fire
+- Fix - stuck unit fix now moves units standing still less frequently and shorter distances than vehicles
+- Fix - don't allow 'divers' (swimmers) to be chosen for random units
+
+4/10/25
+Impasse Total War
+- New Maps - Hurtgen Forest, Krayina, Mehland, Sehreno, UMB armavir, Vidda
+- Add - added ability to adjust the land routes for vehicles (radio 0-8-8 for leader or high commander)
+- Add - added options at the officer to allow splitting player group into multiple groups or to join player groups together.  Each player group leader can recruit their own teammates.
+- Add - added action on arsenal cabinets to select a default loadout (or random)
+- Add - added option to parameter 'Friendly Revive Available' to skip player revive completely (useful when playing solo)
+- Add - added option for players to choose all the objectives on the map.  It is under the parameter 'How many objectives on the map'.
+- Add - added ace earplugs and ace electronic hearing protection to the arsenal if ace is running
+- Add - added option to limit number of ai teammates per squad (default is 8)
+- Fix - artillery and ai vehicle spawning wasn't stopping when game was paused
+- Fix - rename 'vehicles' parameter to 'Vehicles used by AI' for better clarity
+- Fix - no statics showing in garage when it is limit based on 'vehicles used by ai' parameter
+- Fix - when choosing vehicles for the mission using the garage, some vehicles weren't saving the cammo states
+- Fix - improvements to stuck vehicle handling to try to unstick them before just deleting them
+- Fix - when 'no tanks' or 'no jets/helis' option was set, could still spawn them in    
+
+4/6/25
+Split Second
+- Add - added support for ACE arsenal
+- Fix - fix bug on finish mission on server, server still stuck in mission (ie it never ended on server)
+- Fix - fix support for OPTRE WBK Expansion - wasn't using all units
+
+4/3/25
+Impasse Total War
+- Add - added option to broaden fast travel.  Options include 1) only between bases or from captured flags.  2) as 1 with to captured flags.  3) as 2 with to un-captured flags
+- Add - added options to adjust air attack vehicle spawn rate and another for tank spawn rate.  The option for all vehicles will affect these attack vehicles as well - the two options will combine 
+- Add - added marker on the map showing which airfields are owned by which side.  AI can only use planes if their side owns an airfield.
+- Add - added option to have minefields near the objectives
+- Add - added option to have mortars near the objectives
+- Add - option to turn on an aggressive clean up to improve performance
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Add - added option for 800 and 1000m objective areas
+- Fix - rewrite flare drop routine to use only one thread
+- Fix - factions with only pistol wielding units was causing an error (Reb's Reforger Factions)
+- Fix - get working with ALIVE factions
+- Fix - adjust red screen/AI damage when entering enemy territory to center on bases (not objectives) and not take effect if unit is within 1000m of a contested objective.
+- Fix - improve base placement to avoid roads as the AI get stuck trying to navigate the base
+
+Arma Royale
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - get working with ALIVE factions
+
+Escape
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - get working with ALIVE factions
+
+Ground Breach
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - get working with ALIVE factions
+
+Ground Patrol
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - get working with ALIVE factions
+
+Impasse
+- Add - added garbage collection option to flags to remove all dead bodies and weaponHolders
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - factions with only pistol wielding units was causing an error
+- Fix - get working with ALIVE factions
+- Fix - teammates would not respawn when killed
+
+Insurrection
+- Add - add option to not have player face/voice match the faction
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - get working with ALIVE factions
+
+Insurrection Combined Arms
+- Add - add option to not have player face/voice match the faction
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - get working with ALIVE factions
+
+ROUT
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - crash due to IlsTaxi config array can contain strings (Everon)
+- Fix - factions with only pistol wielding units was causing an error
+- Fix - get working with ALIVE factions
+- Fix - rewrite flare drop routine to use only one thread
+
+Split Second
+- Add - added ability to choose individual units within a faction.  Select faction then click the "Select Units" button.
+- Fix - get working with ALIVE factions
+- Fix - 3CB faction still not getting ammo
+
+3/29/25
+Ground Breach
+- Fix - remove single shot pistols from the random pistols that can be chosen for random weapon and escalation modes. (removes pistols like flare guns)
+
+3/28/24
+Impasse Total War
+- Fix - change default escalation to allow all vehicles at the start
+- Fix - arsenal on flags doesn't disappear when we lose flag
+- Fix - stop transport helis from all landing on the garage pad
+- Fix - 'open garage' at blue flag not showing for players who jip into game
+- Fix - attempt to get helis spawning at bases to not be floating in the air
+- Fix - if no 6 person transports found, allow 4 to be counted as transport vehicles
+- Fix - if no transport helis found could end up spawning lots of jets
+- Fix - on small maps with few objectives, could crash due to too few objectives
+- Fix - if using faction with very limited vehicles, was using inappropriate vehicles as backups. It now tries to use civilian vehicles as a fallback, so choose an appropriate civ faction.  If can choose a blufor, opfor, or independent faction as civilian and it will use vehicles from that faction as fallbacks.  If you turn on civilian presence, the civilians will be dressed like the chosen faction, but will not have weapons.
+- Fix - flag at starting objective was red only on 1st playthrough (once saved and reloaded it was blue)
+- Fix - planes were not spawning.  Planes will only spawn for the AI if that team controls an airport.  To control an airport, you must hold the closest objective to the airport (not counting the contested objectives being fought over)
+- Fix - fast travel from flag to garage pad, was putting me on ground instead of up on pad
+- Fix - on capturing zone, only show 1 'task complete' popup
+- Fix - allow selecting Russia (TV) faction - this faction had no units so it wasn't showing up
+- Fix - tons of empty parachutes coming out of helicopters as they are shot down
+- Fix - tank crew is turned out using machine guns
+- Fix - some mods caused ImpasseTW to skip the role assignment screen (where the parameters button is)
+- Fix - Malden workshop mission showed on the Tanoa map.  I had to delete the mission and recreate the workshop page so you'll need to re-subscribe to it.
+- Fix - despawn returning transport vehicles a bit further from the battlefield
+- Fix - some damage vehicles are not be cleaned up 
+- Fix - move open garage selection at officer above selecting role
+- Add - now supports up to 12 players
+
+3/23/25
+Split Second
+- Add - AI teammates (buildings will not be packed as tightly)
+- Add - Pause feature when playing solo
+- Add - "user server difficulty" option
+- Add - fix to work with 3CB factions not having ammo
+
+3/21/25
+Impasse
+- Fix - hotfix - there was a bug in the release yesterday. I should publish stuff when I'm tired :-(
+
+Impasse Total War
+- Fix - bug in accessing arsenal from flags sometimes
+- Fix - couldn't access ACE arsenal from flags (was always regular arsenal)
+- Fix - couldn't drop airport crate if you had respawned since the create was crated
+
+3/20/25
+Impasse Total War
+- New mission released
+
+Impasse
+- Fix - IlsTaxi config array can contain strings (Everon)
+- Fix - flag not showing animation of lowering if flag GUI not shown in parameters
+- Fix - on some maps (Everon) three are too few buildings causing the objective generation algorithm to fail
+- Add - added an option to skip searching for areas with buildings.  The algorithm is fixed so it won't fail, but on maps with few building the algorithm may still place the objective at only a few different places on the map.  With this option it will ensure the objectives are more randomly spread around those maps on subsequent playthroughs.
+
+2/21/25
+Rout
+- Fix - improve vehicle spawning to reduce explosions on spawn
+- Fix - bug in dead body removal
+- Fix - bug with option to force players to get nvgs
+- Fix - bug can cause save to happen before vehicles for next zone are setup hence saving that there are no vehicles in the zone
+- Fix - Show friendly via radio call not working for clients (only worked on server)
+
+2/16/25
+Arma Royale
+- Fix - don't despawn dead bodies if players are nearby (was happening deep in the blue)
+- Fix - allow zeus interface to show all addons, not just official ones
+
+Impasse
+- Fix - allow zeus interface to show all addons, not just official ones
+
+Rout
+- Fix - ejecting over water didn't open chute at correct altitude
+- Add - options to show friendly squads on map via radio call
+- Fix - improve ally wait option wording at officer ("always" became "always wait" and "never" changed to "never wait")
+- Fix - allow zeus interface to show all addons, not just official ones
+
+1/14/25
+Arma Royale
+- Fix - 3CB Factions had empty inventories
+- Add - 'server setting' difficulty for enemy and teammates
+
+Escape
+- Fix - remove RCO from being added to rifles
+- Fix - 3CB Factions had empty inventories
+- Add - 'server setting' difficulty for enemy and teammates
+
+Impasse
+- Fix - remove RCO from being added to rifles
+- Fix - 3CB Factions had empty inventories
+- Add - 'server setting' difficulty for enemy and teammates
+
+Insurrection
+- Fix - remove RCO from being added to rifles
+- Fix - 3CB Factions had empty inventories
+- Add - 'server setting' difficulty for enemy and teammates
+- Fix - when unconscious and a wave is triggered, player would revive next to where they died 
+
+Insurrection Combined Arms
+- Fix - remove RCO from being added to rifles
+- Fix - 3CB Factions had empty inventories
+- Add - 'server setting' difficulty for enemy and teammates
+- Fix - when unconscious and a wave is triggered, player would revive next to where they died 
+
+Rout
+- Fix - 3CB Factions had empty inventories for teammates
+
+1/12/25
+Convoy
+- Fix - make players invincible in bunker before mission starts
+
+Ground Breach
+- Fix - fix for difficulty setting to 'use server setting'
+
+Ground Patrol
+- Fix - get working with ACE arsenal
+- Fix - make players invincible in bunker before mission starts 
+- Fix - remove RCO from being added to rifles
+- Fix - 3CB Factions had empty inventories
+- Add - 'server setting' difficulty for enemy and teammates
+
+ROUT
+- Fix - improve helicopter spawn on pads so they blow up less
+- Fix - remove RCO from being added to rifles
+- Fix - 3CB Factions had empty inventories
+- Add - 'server setting' difficulty for enemy and teammates
+
+1/11/25
+Ground Breach
+- Fix - 3CB Factions had empty inventories
+- Fix - make players invulnerable in starting area
+
+1/8/25
+ROUT
+- Fix - no option to drop airplane crate when carrying
+
+12/29/24
+Escape
+- Add - new option for no enemy spawn points.  Enemy will not respawn.  It makes for an easier game where you can actually clear the zone.  You may want to increase the number of enemy when using this option compared to having enemy respawning to keep the challenge.
+
+12/27/24
+Ground Breach
+- REMOVE - remove RCO from being added to all rifles
+- ADD - added difficulty option ('use server setting') for enemy & teammates skills
+
+12/12/24
+ROUT
+- Add - mechanic near repair points
+- Add - mechanic: add ability to get an airfield crate which can be deployed at an airfield for a garage including fixed wing aircraft
+- Add - mechanic: add ability to save captured vehicles which can be retrieved later 
+
+12/4/24
+Arma Royale
+- Fix - two enemy fighting each other sometimes allow one side to defeat the other
+- Fix - sometimes heli has 4 seats but no option to get in back
+
+Escape
+- Fix - ace healing teammates,player on zone exit
+
+Ground Breach
+- Fix - Objective spelled wrong (Ojbective)
+
+Impasse
+- Fix - ace healing teammates,player
+- Fix - teammates & player healed on entering arsenal (not on capturing objective)
+- Fix - was able to enter arsenal of uncaptured zones
+- Fix - unable to move ammo boxes
+
+Insurrection
+- Fix - ace healing teammates,player
+- Add - teammates & player healed on entering arsenal (not on capturing objective)
+- Fix - ao search broken on Fallujah
+
+Insurrection Combined Arms
+- Add - teammates & player healed on entering arsenal (not on capturing objective)
+- Fix - ace healing teammates,player
+
+ROUT
+- Fix - ace healing teammates,player
+- Fix - teammates & player healed on entering arsenal (not on capturing objective)
+
+12/3/24
+Escape
+- Fix - race condition that may cause arsenal not working in JIP clients
+
+Impasse
+- Fix - race condition that may cause arsenal not working in JIP clients
+
+Insurrection
+- Add - player damage healed on exiting arsenal
+
+Insurrection Combined Arms
+- Add - player damage healed on exiting arsenal
+
+12/2/24
+Arma Royale
+- Add - adjust sunrise/sunset skip time to be a half hour more into daylight time
+- Add - spawn in less enemy at start of game until the black circle shrinks to keep from overwhelming players at start
+- Fix - attempt to fix issue some have seen with 'teammate search' closing as soon as it opens
+
+Escape
+- Fix - When using ACE, teammate AI were not set as medics
+
+Impasse
+- Add - heal teammate AI on zone capture 
+- Fix - clean up dead bodies > 400m from players (was 800m)
+
+Insurrection
+- Add - heal friendly AI on obj completion
+
+Insurrection Combined Arms
+- Add - heal friendly AI on obj completion
+
+ROUT
+- Add - adjust sunrise/sunset skip time to be a half hour more into daylight time
+- Fix - arsenal not available when client JIPs in.
+
+11/28/24
+Impasse
+- Fix - fix race condition causing AI to not move, or be invulnerable
+
+11/24/24
+Arma Royale
+- Fix - Ai Teammate skill not being set as requested in parameters
+- Fix - When using ACE, teammate AI were not set as medics
+- Add - allow heli to show up no matter the save zone size if less than 3 enemy remain
+
+Impasse
+- Fix - large values for 'number of enemy' parameter not actually increasing enemy count
+
+11/21/24
+Changes include some community requests as well as many small bug fixes I noticed
+
+Arma Royale
+- Add - Added feature to 'reset animation' if player's animation appears frozen for >30 seconds (most other missions already have this feature)
+- Fix - launchers showing in crates when running ACE
+- Fix - Teammates had issues when running from a server (lost gear on respawn, not showing in 'Teammate Search' option on loot crates and dead enemy gear)
+- Add - added Mortain, Utah Beach, Carentan maps
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+Convoy
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+Escape
+- Add - Added feature to 'reset animation' if player's animation appears frozen for >30 seconds (most other missions already have this feature)
+- Fix - error in ai controls spamming into log files
+- Add - added Carentan map (from Spearhead 1944 Extended)
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+Ground Breach
+- Add - option to quit mission (at mapboard once mission starts)
+- Add - option to allow respawn 
+- Fix - 'emergency exit' option if starting house if blocked didn't show on clients
+- Add - added Carentan map (from Spearhead 1944 Extended)
+
+Ground Patrol
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+Impasse
+- Fix - Ace arsenal showing 'No virtual items available'
+- Add - added Carentan map (from Spearhead 1944 Extended)
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+- Add - added Carentan maps (from Spearhead 1944 Extended)
+- Fix - possible fix for AI invulnerable and not engaging
+
+Insurrection
+- Add - added Carentan map (from Spearhead 1944 Extended)
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+Insurrection Combined Arms
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+ROUT
+- Fix - set concrete platforms to be a few inches above the ground instead of level, so they don't visually flicker so much
+- Add - added Carentan map (from Spearhead 1944 Extended)
+- Add - Added option to disable the AI reviving players for use when using another AI revive mod
+- Add - Teammates now never run out of ammo or first aid kits (with ACE it will attempt to keep teammates with basic medic supplies)
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+Sniper Errand 
+- Fix - Date was always in the 2030's (arma default), fixed to be era specific on VN, GM, CLSA, SPE DLCs
+
+Split Second
+- Fix - Final score was showing a "%13" after the total score instead of just a "%"
+
+------------
+11/5/24
+ROUT
+- Fix - bug in ally get in vehicle code
+
+11/3/24
+Insurrection
+- Added three maps:  Korsac, Colombia, and Kunduz
+
+Impasse
+- Fix - ai waypoints were getting corrupted keeping AI from moving quickly to zone, or sometimes keeping them from moving at all
+
+11/2/24
+Arma Royale
+- Fix - heli sometimes left before all players were on board
+- Fix - reduced number of enemy at end when playing infinite enemy
+
+10/27/24
+Ground Patrol
+- Fix - changed respawn timer from 30 to 10 seconds (was too long for some players)
+- Fix - on dedicated server, some teammates sometimes didn't spawn in the car
+- Add - option to disable teammate revive so players can use other mods that offer ai revive systems
+
+10/20/24
+Arma Royale
+- Fix - heli sometimes flips upside down
+- Fix - game sometimes doesn't end
+- Add - option to end mission once at least someone has escaped in a heli (in case it isn't ending)
+
+10/13/24
+Ground Breach
+- Fix - reinforcements not working
+- Fix - very rarely starting location would be underground
+
+10/8/24
+Convoy
+- Fix - weferlingen maps had NATO teammates
+
+10/7/24
+Ground Breach
+- add option to disable teammate revive so players can use other mods that offer ai revive systems
+
+10/6/24
+Arma Royale
+- Add - heli escape at end with option for endless enemy
+- Add - weapons sway reduction option
+- Fix - teammates now have random loadouts instead of their class default
+- Fix - teammates never run out of ammo or first aid kits
+
+Ground Breach
+- Add - option for enemy to have nvgs, and if not, if all enemy have flashlights 
+
+Insurrection Combined Arms
+- Fix - was deleting a damaged player vehicle when player was still right beside it
+- Fix - saw an instance of ai not taking damage, hopefully it's fixed now
+
+Sniper's Errand
+- Fix - extraction heli could spawn underwater
+- Fix - option to choose AO location didn't work on dedicated server
+- Fix - improve extract heli comms menu networking code
+
+9/26/24
+Ground Breach
+- converted the ground breach mission so it will work on any map, just rename the pbo
+- added old ace heal call in case anyone is using old ace
+- fix error showing at bottom of screen when reinforcement vehicle spawned in
+- add 7 new mission-maps to the workshop
+
+9/21/24
+ROUT
+- added params option to allow choosing specific vehicles used by enemy or players using garage interface
+- added option when in vehicle for allow/don't allow ally to get in vehicle (cargo seats)
+- added option when in vehicle to allow/don't allow ally to get in crew positions
+- unlock vehicle shouldn't show when in a vehicle
+- fix race condition causing allies to get stuck in vehicles
+
+9/14/24
+ROUT - hotfix - fix bug that would crash game when run for the first time ever on a system
+
+9/14/24
+ROUT
+- fix some dlcs not using tanks/apcs that it should have, also remove some non-vehicles that showed up as tanks or statics.
+- fix new game not remembering previous dlc to default to
+- balanced to have more tanks in zones (vs APCs)
+- after vehicle service, ensure vehicle has toolkit in inventory
+
+9/10/24
+Arma Royale
+- if 10 or less enemy remaining, don't have them fight each other any more
+ROUT
+- added option to 'virtual garage' parameter to make all vehicles available in the garage
+- improve 'recall ally squad' option at officer to keep menu open after selecting a squad
+
+9/6/24
+ROUT
+- add a bunch of new maps (Isla Abramia, Bozoum, Fallujah, Kunduz Valley, Napf Island, Mutambara, Kujari, Virolahti)
+
+9/3/24
+Arma Royale
+- fix number of enemies where two enemy factions were killing each other off too much 
+
+9/1/24
+Ground Breach
+- fix random enemy weapon mode was changing the enemy uniforms to match the players faction
+
+8/31/24
+Split Second
+- add option for building size to use: any size, only small, or only large footprint buildings
+
+8/30/24
+Ground Patrol
+- infil option added: car, base, random  (was only car)
+- exfil option added: heli, car, extract, random (was only heli)
+- fix exit vehicle sometimes in water or on steep hill
+
+8/28/24
+Arma Royale
+- scarce weapon mode - requires more searching to find a good primary weapon.
+- limited weapon variety mode - limits how many kinds of primary weapons are available, this is particularly fun when used along with the option for enemy to use random weapons as they enemy will be using the same limited weapons.
+- increase enemy numbers, especially when two enemy factions fighting each other (I though the game was a little too easy at the 'challenging' number of enemy setting).
+
+8/26/24
+Insurrection Combined Arms
+- show hint while vehicles are being parsed as it can take a long time when lots of mods are enabled
+- ensure vehicle spawn areas are not in water
+
+8/24/24
+Ground Breach
+- fix random enemy weapon modes: civilians getting weapons
+- fix random enemy weapon modes: modes that was supposed to give each enemy a different weapon was just giving different attachments
+- fix random enemy weapon modes: reinforcements not given random weapons
+
+8/22/24
+Arma Royale
+- added Spearhead 1944 Mortain map
+- added option to have two enemy factions that fight each other and players, set this as the default
+- always show number of enemies remaining in briefing
+- added a option for enemy to have randomized gear (either way, enemy still drop some random gear when they die)
+- improvements in AI spawn and movements to add more challenge progressing and ensure more contact with players
+- added an option for 'game type'.  It can be casual, challenging, or push (push is like challenging with a the ai working a bit harder to keep you away from the safe zone).  Casual is the way it used to play, so I've made it more difficult by making challenging the default.
+- fix bug in teammates revive where it was sending too many helpers
+- fix disabled stamina could turn back on when you respawn
+- fix: when ace is in use, FAK not being broken down into ace items for ai teammates 
+- teleport teammates to player team leader when he enters the next zone 
+- tweaked difficulty a bit - testing was primarily done with default settings, 2-4 players, AAF/FIA enemy (CSAT would be much harder for instance)
+
+Ground Breach
+- added random enemy weapon mode (can be either: all enemy have same random weapon, or each enemy has a random weapon)
+
+8/13/24
+Escape from Turmoil
+- added option to have enemy use the faction standard gear.  The default is to replace any gear (vest, backpack, weapon) that is overpowered for the current zone level.  If the option to keep standard gear is used, it will make very overpowered gear available in the early zones which might break the game a bit.  So it's an option that can be used if seeing enemy in strange vests breaks your immersion too badly.
+
+8/10/24
+ROUT
+- added Spearhead 1944 Mortain map
+- once crossroads shares last few locations, show icon on map that fades with time
+- improve building placement when adding extra structures
+- fix bug in teammates revive where it was sending too many helpers
+- fix bug where mission could get stuck and never report zone captured
+- don't count tunnels as buildings
+- fix ai not returning to base after capturing zone
+- fix loading saved game would repopulate the zone with full compliment of statics.
+- fix saving with just a few units left in zone was sometimes, on loading, finishing zone too soon
+- fix when showing crossroads, it called out more than it showed
+- fix smarter statics kicking player off enemy statics
+- fix crossroads stopped when only tanks left
+- fix 'shut it down' at repair location when 20m in the air
+- fix boat drop putting boat at bottom of ocean
+- fix so ai will get in/out of helicopter over water or up on rocks (etc)
+- place base helis a few seconds after the base is generated to improve vehicle exploding on spawn
+- fix race condition where game can have saved the new base, but not that the zone was captured
+
+8/7/24
+Ground Breach & Escape from Turmoil
+- added mission for Spearhead 1944 Mortain map
+
+8/4/24
+Escape from Turmoil
+- fixed equipment not stored correctly in arsenal if Antistasi Ultimate mod is running
+- fixed teammates not being healed when finishing zone when using ace medical mod
+
+8/3/24
+Ground Breach
+- fix bug where teammates could break if playing with multiple enemy factions
+
+8/2/24
+Arma Royale
+- fix bug in teammates revive where it was sending too many helpers
+- always show number of enemies remaining
+- added a option for enemy to have randomized gear
+- fix disabled stamina could turn back on when you respawn
+
+7/31/24
+Ground Breach
+Ground Patrol
+Insurrection
+Insurrection Combined Arms
+- fix bug where face/voice switched back to default after respawn
+
+7/30/24
+Escape from Turmoil
+- added option to have zone barrier be a translucent blue wall (copied from Arma Royale)
+- fixed barrier mine warning signs were not sitting vertically, but were sloped with the terrain
+- fix bug in teammates revive where it was sending too many helpers
+- added ability to have 2 enemy factions on the map which fight each other as well as the players
+
+7/18/24
+ROUT
+- added ability for AI teammates to transport ally squads
+
+7/9/24
+Arma Royale
+- fix casual difficulty was very difficult
+- reduce number of enemy at end of game when needed (usually happened in low visibility maps)
+- fix game ending if all players down but can respawn
+- add faction name to enemy info in map briefing
+
+ROUT
+- added option to include civilians in the zone.  Killing civilians affects the score.
+- added option to include more buildings in zones that have very few buildings.
+- added option to include static weapons in the zone
+
+7/7/24
+Arma Royale
+- released new mission!!
+
+6/21/24
+ROUT
+- fix ace arsenal not used when arsenal set to full even when ace was requested
+
+Escape from Turmoil
+- fixed overfull loot crates could cause player to loose backpack or weapon place into it
+- added team leader 'teammate search' action to loot crates and killed enemy to allow accessing ai teammates inventory directly
+- fix when loading save game 'swap weapon on shoulder' doesn't show rifle name until weapon switched
+- tweaked difficulty a bit (easier on 1st zone, less enemy investigate shootings)
+- fixed, hold action to gather intel didn't go away after intel collected
+- close laptop once intel gathered, make typing noise louder
+- added 'follow me' command to ai teammates (they will copy stance, can un-stick ai:if >100m away, will teleport).  Regroup command will cancel this behavior.
+- fix ai teammate sometimes getting stuck in animation after reviving player
+- fix bug where ai teammate died, he shouldn't be able to die (only go unconscious)
+
+6/17/24
+Ground Breach
+- fix weapons cache wasn't deleted on failed mission to destroy it
+- fix weapons cache didn't have option to destroy it when game run on dedicated server
+- changed teammate loadout to selection menu instead of next/previous
+
+6/14/24
+Escape from Turmoil
+- fix player sometimes dies while spawning into the zone
+- fix: when option set to disable stamina, it was re-enabled upon player respawn
+- on death, put 'shoulder rifle' onto the ground next to the body
+- turn down enemy swarming (less enemy come to investigate killed colleagues)
+- increase enemy respawn delay slightly
+- made intel objective easier to get to (now they aren't always in high traffic areas)
+
+6/9/24
+Escape from Turmoil
+- add 'no timeout' to escape zone time limit options
+- add warning at 10 and 5 min remaining
+
+6/8/24
+Escape, Ground Breach, Ground Patrol, Insurrection, Insurrection CA, ROUT, Split Second
+- add multi faction support (multiple faction selection can be 'choose one' or 'use all')
+- fix some bugs introduced with the addition of subfactions
+
+6/5/24
+Escape, Ground Breach, Ground Patrol, Insurrection, Split Second
+- updated to add support for WebKnight's Zombies and Creatures mod 
+
+6/4/24
+Escape
+- add Utah Beach map
+- fixed: crates with weapons sometimes had invalid ammo type included in crate
+- fixed: on failing to get to exit in time, clients could keep their gear
+
+Insurrection
+- added Utah Beach map
+
+Escape, Ground Breach, Ground Patrol, Insurrection, Split Second
+- support for zombie factions, tested with 'Zombies and Demons' mod
+
+6/2/24
+Escape
+- reduced network traffic a little
+- faction select fixes:
+    - added ability to choose sub-factions (CSAT-Urban for instance).  Espcially useful for some mods like CUPS_Units.
+    - faction screen checkbox states are now saved
+    - fix 'per map' checkbox behavior (only applicable on CDLC/ vanilla maps)
+
+Ground Breach
+- fix bug in escalation mode when run on dedicated server with ai teammates where they didn't get correct weapons
+- faction select fixes:
+    - added ability to choose sub-factions (CSAT-Urban for instance).  Espcially useful for some mods like CUPS_Units.
+    - faction screen checkbox states are now saved
+    - fix 'per map' checkbox behavior (only applicable on CDLC/ vanilla maps)
+
+Ground Patrol
+- improved ability to change teammate loadouts (next/previous instead of random)
+- don't let teammates run out of ammo
+- faction select fixes:
+    - added ability to choose sub-factions (CSAT-Urban for instance).  Espcially useful for some mods like CUPS_Units.
+    - faction screen checkbox states are now saved
+    - fix 'per map' checkbox behavior (only applicable on CDLC/ vanilla maps)
+
+Insurrection 
+- improved ability to change loadout of teammates (next/previous instead of random)
+- faction select fixes:
+    - added ability to choose sub-factions (CSAT-Urban for instance).  Espcially useful for some mods like CUPS_Units.
+    - faction screen checkbox states are now saved
+    - fix 'per map' checkbox behavior (only applicable on CDLC/ vanilla maps)
+
+Insurrection Combined Arms
+- improved ability to change loadout of teammates (next/previous instead of random)
+- faction select fixes:
+    - added ability to choose sub-factions (CSAT-Urban for instance).  Espcially useful for some mods like CUPS_Units.
+    - faction screen checkbox states are now saved
+    - fix 'per map' checkbox behavior (only applicable on CDLC/ vanilla maps)
+
+ROUT
+- faction select fixes:
+    - added ability to choose sub-factions (CSAT-Urban for instance).  Espcially useful for some mods like CUPS_Units..
+    - faction screen checkbox states are now saved
+    - fix 'per map' checkbox behavior (only applicable on CDLC/ vanilla maps)
+    
+Split Second
+- faction select fixes:
+    - added ability to choose sub-factions (CSAT-Urban for instance).  Espcially useful for some mods like CUPS_Units.
+    - faction screen checkbox states are now saved
+    - fix 'per map' checkbox behavior (only applicable on CDLC/ vanilla maps)
+    
+5/29/24
+Insurrection
+Insurrection Combined Arms
+- Fix error when no friendly AI in squad
+- Fix error in Global Mobilization maps: arsenal box wasn't capable of showing arsenal
+
+5/28/24
+Ground Breach
+- Add ACRE2 radios to arsenal even when limited
+- Add destroy cache objective
+- Add troop reinforcements option
+- Add mines option (players can disarm mines with toolkit)
+
+ROUT
+- added Utah Beach map
+- improve ally wait so they stay around bases better
+- top up ally group size and restock gear on zone capture
+- don't let ally or enemy run out of handgun or rifle ammo
+- restock teammates when leader exits arsenal 
+- fix: boarding allies jump out/in repeatedly
+- fix for vehicle request where dropped vehicle often landed 1/2 underground 
+- fix friendly missile specialists not showing up as often as requested
+- fix enemy missile specialists too prevalent
+- possible fix for friendly troops sometimes not spawning
+
+5/17/24
+Escape from Turmoil
+- Add option to replace big blue zone walls with minefield signs
+- Change players to a civ faction to determine starting uniforms
+- Fix bug caused by some AI mods that was leaving enemy in completed zones.
+- Fix: swap rifle on sholder action disappears after respawn
+- Fix: after failing a zone and then completing it, enemy in following zone spawn in old spawn locations.
+- Fix: race conditions on cleaning up previous zone while creating new zone
+
+5/14/24
+Insurrection
+Insurrection Combined Arms
+- add option to hide the hud at the top of the screen.  When hidden, the number of waves and capture status is shown in the task.
+
+5/1/24
+Escape from Turmoil
+- improved zone location selection to include more cities/buildings and adjust better for zone sizes
+
+4/29/24
+Ground Breach
+- added maps: Utah Beach, Namalsk, Yulakia
+
+4/28/24
+Escape from Turmoil
+- Fixed: 'prepare to re-enter zone' doesn't go away
+- re-balance stash boxes to include more weapons and backpacks 
+
+Convoy:
+- add Western Sahara (Sefrou Ramal) map
+
+4/25/24
+Escape from Turmoil
+- added ability to carry 2nd rifle on shoulder.  It doesn't show, but you can now carry a 2nd rifle to help build up some spares in the arsenal.
+
+4/23/24
+Escape from Turmoil
+- fix choose multiple enemy factions, each zone will choose randomly from the list
+- add contracts (find intel, plant bomb, kill target) as optional missions in zones to unlock exits
+- add stamina option
+- add re-choose factions/dlcs option
+- add ACE items to spawn list, sometimes on enemy, and some are purchasable from the merchant
+- allowed enemy combat life savers to retain their MediKit, so those can be found on enemy if the faction has medics.
+- add an infinite zones option
+- add 'number of zones remaining' indicator at start of round
+
+4/20/24
+ROUT
+- fix bases spawning too near the edge of the map
+
+4/13/24
+Insurrection
+- fix bug in ai revive players
+- add Takistan map
+
+4/11/24
+ROUT
+- fix for vehicles with pylons that lose those weapons on rearming
+- fix selecting Spearhead DLC as the dlc to use was hanging the mission
+- added option to have vehicle reinforcements arrive (similar to helicopters currently). This hasn't had very much testing so it is set to NONE as the default. 
+
+3/31/24
+ROUT
+- concrete under helicopters not showing on jip, and sometimes missing on server
+- teammates revive/revivable broken when running on dedicated server
+
+Escape
+- disable tactical ping
+
+Ground Breach - Western Sahara:
+fix player spawning outside the building after completing mission
+
+3/20/24
+Insurrection, Insurrection Combined Arms:
+- use different supply boxes and caches to match era if running on CDLC maps
+
+3/14/24
+Escape:
+- Added a 'very small' map size (500m)
+
+Ground Breach:
+- fix bug in faction face/voice from dedicated server (race condition)
+- full arsenal isn't showing laser designators
+
+Insurrection  and  Insurrection Combined Arms:
+- Fix friendlies run out of ammo.  They are given a few magazines each time the player who is squad leader enters the arsenal, and at each captured objective
+- If using ACE medical, cause enemy ai to die instead of going unconscious
+
+ROUT:
+- Fix bug caused by player getting in a cargo seat while AI are also boarding vehicle
+- Add command to officer to 'relinquish leadership' or 'request leadership' to allow changing group leader.
+- Spawn bases further apart
+- New flare system to cover entire AO and last 20 minutes.
+- Friendly radio level of 25% turned up a little
+- Don't make audible radio chatter when calling in supplies/flares
+
+2/18/24
+Escape from Turmoil:
+- Fix race condition which often left previous zone populated with enemy
+- Fix previous zone marker not being shown on the map
+
+2/17/24
+Escape from Turmoil:
+- Fix: if exiting zone and players still in zone, showed black screen instead of spectator screen.
+
+2/14/24
+ROUT:
+- move fast travel to officer
+- fixed: destroyed buildings not being cleared when new base is placed
+- more cpu efficient flares
+- added Kaska map
+
+1/22/24
+Split Second
+- add option for virtual arsenal 'full' in addition to the previous 'full without backpacks'
+
+1/21/24
+Ground Breach
+- fix: was not showing UAV (and other special) backpacks when arsenal set to 'full'
+
+Escape from Turmoil
+- fix title on dlc selection screen (was showing 'vehicles', is now 'gear')
+
+1/11/24
+Escape from Turmoil
+- fix money gets lost when running with AntistasiPlus mod enabled
+
+1/10/24
+Ground Breach
+- minor change to add some logging to help with optimization of game startup timing
+
+1/9/24
+Ground Breach: added 5 maps:  
+    Diyala
+    Al Salman 2.0
+    New Esseker
+    Sanagasta Map  
+    Project America - Limestone FL USA
+
+1/3/24
+Ground Breach
+Ground Patrol
+- fix for teammate ace revive
+
+ROUT
+- big improvement on base locations so vehicles don't explode
+- keep faction selections on 'new game'
+- add recall squad command to recall a squad to a base
+- disable radio commands when unconscious
+- fix so dropping multiple flares doesn't spam the radio
+- improve flares lighting
+- less flares in the air at the same time
+- fix for teammate ace revive
+- score, we lost two tanks in GM and had cost of $0
+
+Insurrection & Insurrection: Combined Arms
+- add option to use revive even when waves are enabled.
+- option to set teammate ai skill
+- ACE Teammate: make sure ai have FAK and IV item
+- add teammate revive
+- fixed player not getting correct loadout on jip
+
+12/19/23
+Convoy
+Ground Breach
+Ground Patrol
+ROUT
+- if ace is enabled, add plasma and bandage to teammates
+
+ROUT
+- fix teammates disappearing immediately upon death (now waits until players are far away)
+
+12/18/23
+Convoy
+Ground Breach
+Ground Patrol
+ROUT
+- get squad mates to revive player when ACE is in use
+
+12/11/23:
+ROUT
+- Fix to force allies into vehicle after 40 sec if they haven't loaded in yet.
+- improvements for garage opening, bouncing vehicles, etc
+- improve allies getting in vehicles quickly and more reliably
+- improve veh rearm - some vehicles weren't rearming
+- fixed 'shut it down' sound since it was sometimes not playing
+- ensure allies always have weapons, preferably primary, but at least a pistol
+- tweak vehicle count to add a bit more randomness
+- only one tank left and now showing location
+- try to position bases on flatter ground
+- improve detection when vehicles are exploding at the base and stop spawning them
+
+New Mission Released: Escape from Turmoil
+
+11/22/23:
+ROUT
+- Fix to force allies into vehicle after 40 sec if they haven't loaded in yet.
+
+11/14/23:
+Ground Breach
+- if showing hint on hostage/HVT mission, if all enemy dead, give hint to hostage/HVT
+- if no enemy left, end hostage/hvt mission upon release/capture
+- add Kunduz river map
+
+Insurrection
+- add Fallujah map
+
+11/12/23:
+Ground Breach
+- fix for respawning outside of buildings at end of round.
+- give distance hint along with direction for nearest enemy.  Thanks to Phoenix for the code.
+
+ROUT
+- require engine off for rearm/refuel/repair
+- added 2x night time acceleration
+- improve squads loading into vehicles
+- fix spawned boat was underwater
+- remove titan/maws from arsenal
+- fix cam lao nam not finding bases in center of map
+- randomize base vehicles a little more
+- fix the objective 'keep out' zone around cave complexes in Cam Lao Nam
+
+
+10/16/23
+ROUT
+- garage spawn much more reliable and stable
+- flat pads under helis & helipads
+- add scoring
+- larger repair range since concrete can be in way
+- Hints: once enemy infantry gets low, they are revealed on HC map
+- once infantry flee, all vehicles are shown on HC map
+- garage is to the south (only show 1 time per play session)
+- on objective capture, have any ai still around rally at the new base
+- fix voice sometimes english
+- don't spawn in as a diver in new games
+- helo transport move to wasn't opening map when I was in the heli
+- pickup marker was on guy way behind leader
+- arsenal not avail on JIP
+- fix for transport heli with guns was engaging enemy instead of moving straight to requested location
+
+
+10/8/23
+Ground Breach
+- When using ACE, players who were unconscious were not revived at the end of a round
+- Teammates reviving wasn't working when running on a dedicated server
+
+Ground Patrol
+- Teammates reviving wasn't working when running on a dedicated server
+
+Insurrection 
+- Fix to work better when tons of weapon mods are being used, starting time is greatly reduced
+
+Insurrection Combined Arms 
+- Fix to work better when tons of weapon mods are being used, starting time is greatly reduced
+
+Split Second 
+- Fix to work better when tons of weapon mods are being used, starting time is greatly reduced
+
+
+9/26/23
+Ground Breach:
+- Improve startup performance: put up the options on the map before setting up the virtual arsenals.  
+  If player has thousands of weapons, setting up the arsenal takes a while and the lack of the 'start' 
+  option on the map was confusing.  I also figured out a way to load up the ace arsenal 4 times faster.
+
+
+8/13/23:
+Split Second
+- Fix error that Spearhead dlc was required
+
+
+8/7/23:
+Insurrection & Insurrection Combined Arms
+- Enabled ACE Arsenal if ACE is running with option to use default arsenal
+
+
+7/27/23
+- Added Normandy version of the missions
+
+
+6/21/23
+Ground Breach
+- Add option to not change face/voice when player faction changes (default is to update the player to appear as the given faction)
+- Fix issue where arsenal wasn't updating when in faction mode and faction was changed.
+
+
+6/6/23
+Ground Breach
+- Keep player loadout after the round ends if player faction didn't change.
+- Keep player loadout after choosing factions if player faction didn't change.
+- Fixes for ace arsenal (showing muliple of same item, not showing some items)
+- Improve performance a bit when lots of mods are in use.
+
+Ground Patrol
+- Fix dlc check to use configSourceMod
+- description of destory comms equipment - mention white antenna
+- add faction face/voice
+- Keep player loadout after choosing factions if player faction didn't change.
+- Improve performance a bit when lots of mods are in use.
+
+Insurrection:
+- Added dragging
+- Fix dlc check to use configSourceMod
+- add faction face/voice
+
+Insurrection Combined Arms
+- Updated DLC select & Factions to fix corner case bugs
+- Added dragging
+- Fix dlc check to use configSourceMod
+- add faction face/voice
+
+Split Second
+- Fix dlc check to use configSourceMod
+- pick up guns faster - changed from 4 to 2
+
+===============================================================
