@@ -1,5 +1,5 @@
 # Skull's Arma 3 Mission Collection
-Collection of my Arma 3 missions for many extra maps beyond what is available in the workshop
+Collection of my Arma 3 missions for many extra maps beyond what is available in the workshop.  The 'code' section of this site only has the Altis file.  This file can be renamed to work on any map.  If you go to the 'releases' section, you'll find a zip file for each game containing a whole bunch of maps so you don't have to do the renaming.
 
 ## The Missions
 - **Arma Royale:** a randomized coop battle royale type of game.  Find gear and then survive against the AI as the zone shrinks.
