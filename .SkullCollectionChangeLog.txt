@@ -1,3 +1,34 @@
+7/1/26
+Impasse Total War
+* Add - use faction flags instead of the red/blue if the faction has a flag
+* Add - split parameter 'How long between AI spawn waves' into one for ally and one for enemy
+* Add - added param to reset all parameters and/or erase all saved games
+* Add - added parameter for removing 'eject and parachute' when in aircraft for those with mods that add it
+* Add - added 'random' parameter to a whole bunch of parameters - I didn't throughly test every one, let me know if you encounter errors
+* Add - added parameter to start the new game with a few zones captured.  When adjusting the objectives/zones at the start, you can create a multi-pronged invasion.
+* Add - added option to fast travel parameters to skip the parachute and just fast travel to the ground
+* Add - added to the fast travel options for being able to fast travel into the red zones
+* Fix - improve heli transport/truck transport/service vehicle to ignore enemy better
+* Fix - transport and service trucks had two icons showing on the map
+* Fix - fix missing or duplicate * on default parameters
+* Fix - fast travel by helicopter sometimes the heli would not move
+* Fix - after defend phase, rarely flag indicator at side of screen would be stuck 'grayed out'
+* Fix - after teammate revive, rarely the down unit is stuck lying down even after revive
+* Fix - fix garage save/load issues: not always handling crew/texture/animation correctly, wasn't saving pylons at all
+* Fix - fix 'calculating attack vector x/y' had incorrect y value if using more than 1 objective per zone
+* Fix - fix for single unit squads staying around long after a zone has been captured and the battle has moved on
+* Fix - RHS units are all classified 'rifleman' in their conifg. I was able to fix crew/driver/pilot so they only spawn as crew, but some units still just have pistols
+* Fix - messed up save could leave objective names showing on the map for future objectives
+* Fix - statics could get places right next to each other, have them spread out more
+* Fix - if 'joining next infantry wave' and you are squad leader, any nearby ai teammates not in vehicles will be brought along with you
+* Fix - attempt to fix player no longer has access to Zeus after respawning
+* Fix - life signs not showing units in deep water
+* Fix - save game was only pushed out to disk when arma closed, changed it to happen at zone capture and manual saving in case arma crashes
+* Fix - set flyInHeight for jets to 400
+* Fix - make the area cleared for the base slightly larger to deal with large buildings near the edges
+* Fix - ensure transports, or attack vehicles that are out of ammo, despawn if taking too long to return to base
+* Fix - air dropped transports weren't returning to base correctly after dropping off troops
+
 6/21/26
 Impasse Total War
 * Add - added option when requesting teammates via heli/truck to pick a squad type
