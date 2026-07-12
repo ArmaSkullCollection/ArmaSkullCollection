@@ -1,10 +1,37 @@
+7/11/26
+Impasse Total War
+HotFix - bug in parsing custom static weapons with textures caused game not to start
+
+7/11/26
+Impasse Total War
+* Add - added new tasks: destroy AA, rescue pilot, rescue POWs, build FOB, recon
+* Add - added Side Operations you can request at any time: deliver troops, rescue POWs, rescue pilot, deliver supplies, tow vehicle (give me feedback on the effects amounts if its noticable)
+* Add - add a flag in the bases (aesthetic only, no interactions)
+* Add - added simple towing feature to the mission
+* Add - added two new parameters that allow giving a boost to vehicle numbers at the start of a new zone and/or start of the defend phase (give me feedback if the amounts are too large/small)
+* Add - added parameter to change how often the time remaining in the defend phase is displayed.
+* Add - added parameter to cause some buildings in the area to get damaged before the battle starts to give a war torn feel
+* Add - added parameter option so the flag indicators at the side of the screen can shot at the top instead.
+* Fix - moved the 'Eject and Parachute' action lower in the action list below all the vehicle controls and gave it some color to stand out
+* Fix - improve teammates speed in getting to you to revive you
+* Fix - fix bug that was limiting amount of enemy attack vehicles that spawned the first time in a new zone
+* Fix - add in a fix to handle bad cfgVehicle side attribute in mod vehicle definitions
+* Fix - possible fix for issues with fast travel at flags due to mod conflict
+* Fix - fixed location selection (calling in supplies, supports, etc) when in a vehicle if in optic view mode
+* Fix - minor adjustment to help stuck units get back to following waypoints
+* Fix - make CAS plane more deadly by allowing both missiles and bombs to be dropped instead of one or the other
+* Fix - fix bug if press escape from constructing fortification, the objects stay (only locally) instead of being deleted.
+* Fix - improve 'calculating attack vectors' time
+* Fix - enemy infantry aren't given waypoints at start of zone until allies start moving out
+* Fix - fix handling of factions who have a defined flag, but the file doesn't exist, causing flag not to appear and other errors
+
 7/1/26
 Impasse Total War
 * Add - use faction flags instead of the red/blue if the faction has a flag
 * Add - split parameter 'How long between AI spawn waves' into one for ally and one for enemy
 * Add - added param to reset all parameters and/or erase all saved games
 * Add - added parameter for removing 'eject and parachute' when in aircraft for those with mods that add it
-* Add - added 'random' parameter to a whole bunch of parameters - I didn't throughly test every one, let me know if you encounter errors
+* Add - added 'random' parameter to a whole bunch of parameters - I didn't thoroughly test every one, let me know if you encounter errors
 * Add - added parameter to start the new game with a few zones captured.  When adjusting the objectives/zones at the start, you can create a multi-pronged invasion.
 * Add - added option to fast travel parameters to skip the parachute and just fast travel to the ground
 * Add - added to the fast travel options for being able to fast travel into the red zones
