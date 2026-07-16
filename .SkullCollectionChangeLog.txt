@@ -1,3 +1,19 @@
+7/16/26
+Impasse Total War
+* Add - added a attack bombardment phase (smoke/artillery) at start of zone as allies advance, and at start of defend as enemy advance.  Can be customized in the parameters.
+* Add - added parameters to allow giving vehicles damage reduction/extra armor.  Can choose all/air/transport/air-transport/player or none, and how much 1-30%
+* Add - adjust number of static in larger zones to have more statics and added a 'too many' option to put even more statics in zones.  I have it cap at 50 statics in a zone for the large zones to keep from tanking performance.
+* Add - added option in param for when defend phase happens: 'every time zone is captured, but if you fail to defend, it will happen again'.  Default option only triggers once per zone, this one requires you succeed at defending to advance. 
+* Fix - have buildings get damaged after adding buildings to the zone instead of before
+* Fix - fix bugs showing in logs for mods with bad faction data on vehicles
+* Fix - fixed bug where flag could be locked when it was returned to fully up but was never actually lost
+* Fix - remove tow action from destroyed vehicles, and 'tow from veh' action from vehicles that can't move* 
+* Fix - medivac side op would not fail if wounded unit dies
+* Fix - tow vehicle was getting cleaned up as an abandoned vehicle
+* Fix - CSAT AA vehicle (Tigris) not being assigned to the faction
+* Fix - Destroy AA task was getting an error and not being created
+* Fix - allow for reviving ai teammates from prone
+
 7/11/26
 Impasse Total War
 HotFix - bug in parsing custom static weapons with textures caused game not to start
