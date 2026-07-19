@@ -1,3 +1,19 @@
+7/19/26
+Impasse Total War
+* Fix - game hangs if faction doesn't have AA vehicles
+
+7/18/26
+Impasse Total War
+* Fix - game broken on dedicated servers
+* Fix - AA vehicle was a tank if user chose faction vehicles
+* Fix - AA vehicles could blow up at spawn in
+
+7/17/26
+Impasse Total War
+* Fix - fix race condition in time_between_ally_spawn_waves that was causing errors
+* Fix - FOB construction vehicle wouldn't spawn if faction's repair truck had been chosen by the player.
+* Fix - fix if AA vehicle explodes when spawning in, task never triggers complete, but AA no longer exists
+
 7/16/26
 Impasse Total War
 * Add - added a attack bombardment phase (smoke/artillery) at start of zone as allies advance, and at start of defend as enemy advance.  Can be customized in the parameters.
