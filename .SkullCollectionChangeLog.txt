@@ -1,3 +1,13 @@
+7/22/26
+Impasse Total War
+* Add - added 7 and 10 minute options to ally and enemy spawn delays
+* Fix - fix bug if you use action for FOB construction while doing an FOB/fast travel construction
+* Fix - bug in enemy retreating after defend if nearest enemy base has no roads nearby to retreat to
+* Fix - heli transport, when sending 'all done' would say units still in heli when none are
+* Fix - ammo cache was destroyed at start
+* Fix - clear repair pad should remove aircraft/rally point boxes
+* Fix - called in transport heli not firing guns, changed player's transport heli again to try to get it to go where desired and still fire it's guns
+
 7/19/26
 Impasse Total War
 * Fix - game hangs if faction doesn't have AA vehicles
