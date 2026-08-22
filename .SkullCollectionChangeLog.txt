@@ -1,5 +1,7 @@
-8/13/26
-Zip Collection re-uploaded to dropbox due to corrupted file
+8/20/26
+Impasse Total War
+* Fix - fix issue with 'Bundeswehr complete - German Armed Forces (AiO)' mod causing game to crash (faction loadout cfg)
+* Fix - fix another issue with 'Bundeswehr complete - German Armed Forces (AiO)' mod causing game to crash (vehicle ammo cfg)
 
 7/22/26
 Impasse Total War
