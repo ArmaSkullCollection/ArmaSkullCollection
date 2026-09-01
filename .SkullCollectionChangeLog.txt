@@ -1,3 +1,50 @@
+8/31/26
+Impasse Total War
+* Fix - default base layouts not showing in the 'load base layouts' menu
+* Fix - "Follow" action not available on units in rescue task. 
+* Fix - rescue task units not reliable at getting in vehicles
+* Fix - rescue task sometimes would not complete correctly 
+* Fix - bug where units could end up with just a 'cycle' waypoint
+* Fix - bombardment always doing smoke and arty even if only one of the two was requested
+* Fix - fixed battle report scoreboard recording parachutes as damaged vehicles and fixed vehicles damages on spawn in were counted as damaged
+* Fix - add in possible fix for arsenal load sometimes not allowed even when items gear is all allowed
+* Fix - show life signs showing all units on the map instead of just those in the objective area
+* Fix - In transport heli, when it asks for number of seats, allow the mouse wheel to accept selection and keep mouse wheel movement from triggering player action menu
+* Fix - troops teleported nearer to objective end up running back to spawn area
+* Fix - make garrisoned units a bit more likely to enter military buildings than civilian buildings
+* Fix - disable loading saved unit loadout at start if it has gear not allowed in the mission
+
+8/22/26
+Impasse Total War
+* Maps - added Deniland and Zargabad 2025 (CUP Maps 2.0)
+* Add - added ability for players to define your own base layouts.  You can add to current base layouts, or use the EMPTY base aesthetic and add your own structures.
+  * Use the officer action to 'modify base layout' > 'load layout' to choose how the base looks.  
+  * The ones that are '-- NAME --' are like a background.  You can load one of those and then load another as a layer on top of it.  
+  * Use zeus or the construction vehicle to add structures around a base, and then use the officer action to 'modify the base layout' > 'save'.  
+  * Load, add to, rename, import, and export are also available.
+  * The parameters for full/small base will impact what is in the base by default and is not saved with the layouts.
+* Add - added a 'battlefield report' accessible from the radio 0-8-7 to show number of units killed
+* Add - added ability to place airfield anywhere not just at map defined airports
+* Add - added parameter to limit which land vehicles shoot at aircraft (all, not AA, only AA, none) to make flying aircraft easier if desired
+* Add - split up parameter for distance transports unload into one for friendly and one for enemy
+* Add - added 'cleanup dead' to commander radio (0-8-5-6)
+* Add - added in 3k objectives zone option, used for tank battles or other special modes
+* Add - added 'save game' option from commander radio 0-8-5-5
+* Add - added parameter for disabling the stuck handler for when you have an AI mod that helps unstick ai that get stuck
+* Add - added option to artillery types used to have smaller artillery shells
+* Fix - have warships spawn in with their weapons, parameter added to allow weapons to be active (disabled by default since the warships will shoot down any aircraft within 5km or more)
+* Fix - attempted fix for playing with ACE sometimes leaves player at black screen after respawning
+* Fix - attempted fix for players sometimes getting stuck at black screen at mission start
+* Fix - if params set to have no attack or transports of a class of vehicle, don't put those in the base or garage either
+* Fix * objects placed with zeus were not zeus editable after save/load game
+* Fix - fix some unarmed vehicles being classified as armed
+* Fix - fix some scenarios that could cause player's vehicle to be invulnerable
+* Fix - improve fortification UI by removing 'place' button and just react to clicking on item in the list
+* Fix - change 'more' to 'next' in action menus to better translate into other languages
+* Fix - fix Global Mobilization: if player side vehicles chosen using garage interface and garage set to show faction vehicles, could have no vehs in garage
+* Fix - when editing objectives if objectives are deleted and none are moved/inserted, the objectives aren't actually deleted
+* Fix - fix bug where groups that were not supposed to be managed by the InfantryManager were still getting managed
+
 8/20/26
 Impasse Total War
 * Fix - fix issue with 'Bundeswehr complete - German Armed Forces (AiO)' mod causing game to crash (faction loadout cfg)
