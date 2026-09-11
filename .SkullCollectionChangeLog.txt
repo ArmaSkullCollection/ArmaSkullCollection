@@ -1,3 +1,17 @@
+9/11/26
+Impasse Total War
+* Add - added new parameter/settings system.  All parameters are now saved with the game.  Parameters can be saved/loaded/exported/imported.  Your previous parameters are saved in '-Parameters-' profile so you can load them.
+* Fix - extremely small (50,100) sized AOs were crashing the mission
+* Fix - after winning the game, the old save game is not removed (leaving an 'empty' game if player tries to continue the mission)
+* Fix - added % values to the parameters for adjusting vehicle amounts and for friendly vehicle/infantry amount adjustments
+* Fix - objectives need more defenders when they are first created
+* Fix - game was counting vehicle crew instead of just infantry and infantry in transports when limiting number of AI
+* Fix - if game set to have 1 objective and no variation in that number, it would still have 2 objectives in the final zone
+* Fix - have statics loaded with unit type defined in static's config (if they get off, any soldier might get back on)
+* Fix - was allowing AATanks in garage even when no tanks were allowed in the mission
+* Fix - driver and crew type of units were not shown in recruit-able units or in arsenal faction loadouts
+* Fix - download task, laptop went flying away when building was destroyed, fix so laptop stays near table.
+
 8/31/26
 Impasse Total War
 * Fix - default base layouts not showing in the 'load base layouts' menu
