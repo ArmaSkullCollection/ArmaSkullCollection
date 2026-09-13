@@ -1,3 +1,10 @@
+9/13/26
+Impasse Total War
+* Add - added a parameter (arma parameter) to only allow host/admin to edit settings.  If changed to 'yes' then games without a host/admin when game starts will not allow a random player to change the settings.
+* Fix - on new game, faction selection and choosing vehicles using garage interface not showing up
+* Fix - default base layouts not showing in the load requester
+* Fix - zeus interface not bringing up attributes for units or groups when double clicking
+
 9/11/26
 Impasse Total War
 * Add - added new parameter/settings system.  All parameters are now saved with the game.  Parameters can be saved/loaded/exported/imported.  Your previous parameters are saved in '-Parameters-' profile so you can load them.
