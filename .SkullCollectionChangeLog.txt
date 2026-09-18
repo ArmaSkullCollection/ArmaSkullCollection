@@ -1,3 +1,15 @@
+9/18/26
+Impasse Total War
+* Add - added ability to exit mission from the settings screen (press ESC) to handle corner cases (like admin lost connection during settings)
+* Fix - fixes to settings screen to handle networking delays, server disconnects hanging players, and other issues
+* Fix - fix missing localized string 'Friendly Switch' label in settings
+* Fix - Team Switch option not showing at officer
+* Fix - if player is down and team switches with a unit in a vehicle, the unit is incorrectly moved back into the vehicle after a minute
+* Fix - some mods units/vehicles not showing up in zeus
+
+Ground Breach
+* Add - added setting to start prone on the ground instead of inside a building.  No arsenals are available once the game starts in this mode.
+
 9/13/26
 Impasse Total War
 * Add - added a parameter (arma parameter) to only allow host/admin to edit settings.  If changed to 'yes' then games without a host/admin when game starts will not allow a random player to change the settings.
