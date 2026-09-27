@@ -1,3 +1,31 @@
+9/27/26
+Impasse Total War
+* Add - added option to 'Stack Sandbags' which allows creation of a small sandbag wall for cover.  Check the action menu when player is on the ground and looking downward.
+* Add - added support for ACE fortify
+* Add - added ability for squad leaders to have remote garage access (0-8-5-6).  Put a driver in the vehicle and he will be on your squad so you can command him to come to you.
+* Add - add setting option to teleport vehicles instead of air dropping them when needed
+* Add - added more playable units to the mission (now can accommodate 20 players)
+* Fix - map icons showing vehicles was only showing one vehicle per group.  If a group had more than 1 vehicle the other vehicles didn't show on the map.
+* Fix - show life signs can cover the wrong area size when objective size is variable
+* Fix - fortification rotation speed didn't shift between slow and fast correctly (rotates slower if shift held)
+* Fix - fix some strings that were showing the localize variable instead of the string
+
+Convoy
+* Fix - teammates can spawn in as wrong faction
+
+Escape
+* Add - added support for Even Better Inventory (EBI) mod sling weapon (missions weapon on sholder is disabled, and EBI sling weapon is saved/loaded with saved games)
+* Add - broke up old 'Enemy Gear' option into 'Enemy Armor' and 'Enemy Weapons'
+
+Impasse
+* Fix - improve time it takes to find objectives for new game on maps with few buildings
+* Fix - improve time it takes to add buildings to the zones (need on heavily wooded maps with little room)
+* Fix - improve user notifications while mission is being created
+* Fix - some vehicles had extra crew that got left on far end of the map (RHS T-72)
+
+Insurrection
+* Fix - fix random button in ace arsenal causing error in the logs
+
 9/18/26
 Impasse Total War
 * Add - added ability to exit mission from the settings screen (press ESC) to handle corner cases (like admin lost connection during settings)
