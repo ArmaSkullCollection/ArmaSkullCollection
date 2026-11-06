@@ -1,3 +1,43 @@
+11/6/26
+Impasse Total War
+* Add - added option to start on aircraft carrier
+* Add - add action to remove fallen trees when player looks at a fallen tree
+* Add - added a garrison option for as many units as possible to be garrisoned
+* Add - men/groups placed by zeus don't get assigned any waypoints for a minute to allow player to give them waypoints
+* Add - if zeus adds a waypoint, or deletes a waypoint, then that group will not get auto assigned waypoints until it is without a waypoint for 5 minutes
+* Add - added ability to adjust the transport unload distance at the officer during the mission (default is still set in settings)
+* Fix - vehicle chooser didn't fit on screen when ui scaling set to normal.  Vehicle chooser is not available at UI scaling of large or extra large.
+* Fix - team switching into non-leader, the group stops getting assigned waypoints
+* Fix - team switching into unit in a vehicle caused some new team members to eject from the vehicle
+* Fix - friendlies in statics not showing as friendly on the map (statics show as infantry not vehicles)
+* Fix - many zeus modules not working (arsenal, etc)
+* Fix - add in check in case a mod deletes an officer or mechanic, and restore them
+
+10/24/26
+Impasse Total War
+* Add - added option to keep or swap gear when switching into other units 
+* Add - incorporate amphibious vehicles into the game causing better sea assaults (does not include amphibious vehicles transporting other vehicles)
+* Add - at beginning of defend phase, repair any damaged or destroyed statics in the defend zone
+* Add - added option in garage to allow any pylon weapons, or only those defined for the vehicle
+* Fix - improve handling of assaults where there is no land route (better use of air and sea routes)
+* Fix - changed 'click to edit settings' into a button
+* Fix - in saved base layouts, some objects were spawned in underground
+* Fix - fix French translations (Thanks SRXcraft!)
+* Fix - canceling sandbag placement is still doing animation
+* Fix - when using radio to save game, show hint that game was saved
+* Fix - fixed bug where base locations could be placed further than needed from the objective
+* Fix - improve base placement to keep bases from spawning too near other bases or objectives
+* Fix - fixed garage pylons: load button not always working, drop downs not always updated correctly
+* Fix - remove 'base aesthetic' setting as it's no longer used
+* Fix - loading settings didn't update other player's setting screen
+* Fix - Settings delete saved settings now asks 'are you sure?'
+* Fix - rescue pilot could break (pilot joined another group)
+* Fix - vehicle chooser save feature would not work right if saving and then changing the list before starting the game
+
+Sniper's Errand
+* Fix - improve mutli-AO locations so they stay closer together
+* Add - added option for more/less patrols (also affects chance of reinforcements when killing enemy in the zone, but not patrols)
+
 9/27/26
 Impasse Total War
 * Add - added option to 'Stack Sandbags' which allows creation of a small sandbag wall for cover.  Check the action menu when player is on the ground and looking downward.
@@ -9,19 +49,19 @@ Impasse Total War
 * Fix - show life signs can cover the wrong area size when objective size is variable
 * Fix - fortification rotation speed didn't shift between slow and fast correctly (rotates slower if shift held)
 * Fix - fix some strings that were showing the localize variable instead of the string
+* Fix - some vehicles had extra crew that got left on far end of the map (RHS T-72)
 
 Convoy
 * Fix - teammates can spawn in as wrong faction
 
 Escape
-* Add - added support for Even Better Inventory (EBI) mod sling weapon (missions weapon on sholder is disabled, and EBI sling weapon is saved/loaded with saved games)
+* Add - added support for Even Better Inventory (EBI) mod sling weapon (missions weapon on shoulder is disabled, and EBI sling weapon is saved/loaded with saved games)
 * Add - broke up old 'Enemy Gear' option into 'Enemy Armor' and 'Enemy Weapons'
 
 Impasse
 * Fix - improve time it takes to find objectives for new game on maps with few buildings
 * Fix - improve time it takes to add buildings to the zones (need on heavily wooded maps with little room)
 * Fix - improve user notifications while mission is being created
-* Fix - some vehicles had extra crew that got left on far end of the map (RHS T-72)
 
 Insurrection
 * Fix - fix random button in ace arsenal causing error in the logs
