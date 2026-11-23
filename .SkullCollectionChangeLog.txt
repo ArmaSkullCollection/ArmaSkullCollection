@@ -1,3 +1,19 @@
+11/23/26
+Impasse Total War
+* Add - added setting to allow wandering infantry in the objective to enter buildings periodically and hold position for a few minutes before continuing patrol.
+* Add - added to teammates 'Follow me' a menu for 'Follow distance' with values of 2, 5, 12, 20, 30 meters.
+* Add - added to the setting for spawn delay longer times (up to 20 minutes)
+* Add - when using 'swap into AI squad mate' at the officer, if the squad mate is nearby (300m) then you just change group positions with him (and swap leadership if appropriate), if > 300m then you move to the teammates position without swapping group position and he is deleted
+* Fix - fixed bug when using menu to access teammates actions sometimes didn't work (F2-6-7 might bring up the 'Follow Me' menu on teammate, worked around a bug in Arma addAction)
+* Fix - added a 'collecting factions' message in case there are tons of factions and it takes a while, also moved scanning factions until after the settings screen was shown
+* Fix - possible fix for some aircraft being dropped by parachute
+* Fix - improve 'download intel' and 'acquire intel' tasks to keep table/laptop/briefcase upright and visible (ex: above rubble if building is destroyed)
+* Fix - once in a while some friendly units not showing with friendly infantry icon on the map
+* Fix - don't show 'Set aircraft to circle location' if player is pilot
+* Fix - fix possible causes for _unitType == "" error
+* Fix - bug in vehicle chooser when selecting both player and enemy vehicles (second time didn't show any vehicles to choose from)
+* Fix - when adding teammates, spawn them further from the player so they don't surround you suddenly and bump you around
+
 11/6/26
 Impasse Total War
 * Add - added option to start on aircraft carrier
