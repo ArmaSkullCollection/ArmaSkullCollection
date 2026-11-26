@@ -1,3 +1,9 @@
+11/26/26
+Impasse Total War
+* Fix - when setting for no transports of a specific vehicle, could still have 'dual' class that would transport units
+* Fix - ships sometimes spawn on roads
+* Fix - sometimes crew placed in vehicle through garage jump out of vehicle shortly after being place in it
+
 11/23/26
 Impasse Total War
 * Add - added setting to allow wandering infantry in the objective to enter buildings periodically and hold position for a few minutes before continuing patrol.
